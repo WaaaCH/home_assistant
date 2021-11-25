@@ -69,8 +69,8 @@
           g = t & u.P,
           y = t & u.B,
           m = d ? r : v ? r[e] || (r[e] = {}) : (r[e] || {}).prototype,
-          b = d ? i : i[e] || (i[e] = {}),
-          _ = b.prototype || (b.prototype = {});
+          _ = d ? i : i[e] || (i[e] = {}),
+          b = _.prototype || (_.prototype = {});
         for (s in (d && (n = e), n))
           (l = ((f = !p && m && void 0 !== m[s]) ? m : n)[s]),
             (h =
@@ -80,8 +80,8 @@
                 ? c(Function.call, l)
                 : l),
             m && a(m, s, l, t & u.U),
-            b[s] != l && o(b, s, h),
-            g && _[s] != l && (_[s] = l);
+            _[s] != l && o(_, s, h),
+            g && b[s] != l && (b[s] = l);
       };
     (r.core = i),
       (u.F = 1),
@@ -365,10 +365,10 @@
       var g,
         y = d[v],
         m = p[y],
-        b = a[y],
-        _ = b && b.prototype;
-      if (_ && (_[f] || c(_, f, h), _[l] || c(_, l, y), (u[y] = h), m))
-        for (g in r) _[g] || o(_, g, r[g], !0);
+        _ = a[y],
+        b = _ && _.prototype;
+      if (b && (b[f] || c(b, f, h), b[l] || c(b, l, y), (u[y] = h), m))
+        for (g in r) b[g] || o(b, g, r[g], !0);
     }
   },
   function (t, e, n) {
@@ -464,15 +464,15 @@
             g,
             y = o(e),
             m = i(y),
-            b = r(c, d, 3),
-            _ = a(m.length),
+            _ = r(c, d, 3),
+            b = a(m.length),
             w = 0,
-            x = n ? p(e, _) : u ? p(e, 0) : void 0;
-          _ > w;
+            S = n ? p(e, b) : u ? p(e, 0) : void 0;
+          b > w;
           w++
         )
-          if ((h || w in m) && ((g = b((v = m[w]), w, y)), t))
-            if (n) x[w] = g;
+          if ((h || w in m) && ((g = _((v = m[w]), w, y)), t))
+            if (n) S[w] = g;
             else if (g)
               switch (t) {
                 case 3:
@@ -482,10 +482,10 @@
                 case 6:
                   return w;
                 case 2:
-                  x.push(v);
+                  S.push(v);
               }
             else if (f) return !1;
-        return l ? -1 : s || f ? f : x;
+        return l ? -1 : s || f ? f : S;
       };
     };
   },
@@ -507,19 +507,19 @@
       g = n(145),
       y = n(60),
       m = n(3),
-      b = n(4),
-      _ = n(10),
+      _ = n(4),
+      b = n(10),
       w = n(15),
-      x = n(31),
-      S = n(34),
+      S = n(31),
+      x = n(34),
       k = n(39),
       E = n(107),
       P = n(23),
       O = n(59),
       A = n(9),
-      C = n(37),
-      j = P.f,
-      N = A.f,
+      j = n(37),
+      N = P.f,
+      C = A.f,
       T = E.f,
       F = r.Symbol,
       M = r.JSON,
@@ -540,19 +540,19 @@
           return (
             7 !=
             k(
-              N({}, "a", {
+              C({}, "a", {
                 get: function () {
-                  return N(this, "a", { value: 7 }).a;
+                  return C(this, "a", { value: 7 }).a;
                 },
               })
             ).a
           );
         })
           ? function (t, e, n) {
-              var r = j(D, e);
-              r && delete D[e], N(t, e, n), r && t !== D && N(D, e, r);
+              var r = N(D, e);
+              r && delete D[e], C(t, e, n), r && t !== D && C(D, e, r);
             }
-          : N,
+          : C,
       H = function (t) {
         var e = (U[t] = k(F.prototype));
         return (e._k = t), e;
@@ -569,15 +569,15 @@
         return (
           t === D && Y(W, e, n),
           m(t),
-          (e = x(e, !0)),
+          (e = S(e, !0)),
           m(n),
           i(U, e)
             ? (n.enumerable
                 ? (i(t, R) && t[R][e] && (t[R][e] = !1),
-                  (n = k(n, { enumerable: S(0, !1) })))
-                : (i(t, R) || N(t, R, S(1, {})), (t[R][e] = !0)),
+                  (n = k(n, { enumerable: x(0, !1) })))
+                : (i(t, R) || C(t, R, x(1, {})), (t[R][e] = !0)),
               q(t, e, n))
-            : N(t, e, n)
+            : C(t, e, n)
         );
       },
       K = function (t, e) {
@@ -587,15 +587,15 @@
         return t;
       },
       X = function (t) {
-        var e = L.call(this, (t = x(t, !0)));
+        var e = L.call(this, (t = S(t, !0)));
         return (
           !(this === D && i(U, t) && !i(W, t)) &&
           (!(e || !i(this, t) || !i(U, t) || (i(this, R) && this[R][t])) || e)
         );
       },
       Z = function (t, e) {
-        if (((t = w(t)), (e = x(e, !0)), t !== D || !i(U, e) || i(W, e))) {
-          var n = j(t, e);
+        if (((t = w(t)), (e = S(e, !0)), t !== D || !i(U, e) || i(W, e))) {
+          var n = N(t, e);
           return (
             !n || !i(U, e) || (i(t, R) && t[R][e]) || (n.enumerable = !0), n
           );
@@ -624,7 +624,7 @@
             e = function (n) {
               this === D && e.call(W, n),
                 i(this, R) && i(this[R], t) && (this[R][t] = !1),
-                q(this, t, S(1, n));
+                q(this, t, x(1, n));
             };
           return o && z && q(D, t, { configurable: !0, set: e }), H(t);
         }).prototype,
@@ -644,16 +644,15 @@
       })),
       a(a.G + a.W + a.F * !B, { Symbol: F });
     for (
-      var et =
-          "hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(
-            ","
-          ),
+      var et = "hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(
+          ","
+        ),
         nt = 0;
       et.length > nt;
 
     )
       p(et[nt++]);
-    for (var rt = C(p.store), it = 0; rt.length > it; ) v(rt[it++]);
+    for (var rt = j(p.store), it = 0; rt.length > it; ) v(rt[it++]);
     a(a.S + a.F * !B, "Symbol", {
       for: function (t) {
         return i(V, (t += "")) ? V[t] : (V[t] = F(t));
@@ -684,7 +683,7 @@
     });
     a(a.S + a.F * ot, "Object", {
       getOwnPropertySymbols: function (t) {
-        return O.f(_(t));
+        return O.f(b(t));
       },
     }),
       M &&
@@ -705,7 +704,7 @@
             stringify: function (t) {
               for (var e, n, r = [t], i = 1; arguments.length > i; )
                 r.push(arguments[i++]);
-              if (((n = e = r[1]), (b(e) || void 0 !== t) && !J(t)))
+              if (((n = e = r[1]), (_(e) || void 0 !== t) && !J(t)))
                 return (
                   y(e) ||
                     (e = function (t, e) {
@@ -757,19 +756,19 @@
         g = n(132),
         y = n(38),
         m = n(31),
-        b = n(13),
-        _ = n(54),
+        _ = n(13),
+        b = n(54),
         w = n(4),
-        x = n(10),
-        S = n(89),
+        S = n(10),
+        x = n(89),
         k = n(39),
         E = n(41),
         P = n(40).f,
         O = n(91),
         A = n(35),
-        C = n(5),
-        j = n(25),
-        N = n(58),
+        j = n(5),
+        N = n(25),
+        C = n(58),
         T = n(55),
         F = n(16),
         M = n(47),
@@ -787,14 +786,14 @@
         q = Array.prototype,
         H = u.ArrayBuffer,
         J = u.DataView,
-        Y = j(0),
-        K = j(2),
-        X = j(3),
-        Z = j(4),
-        Q = j(5),
-        tt = j(6),
-        et = N(!0),
-        nt = N(!1),
+        Y = N(0),
+        K = N(2),
+        X = N(3),
+        Z = N(4),
+        Q = N(5),
+        tt = N(6),
+        et = C(!0),
+        nt = C(!1),
         rt = F.values,
         it = F.keys,
         ot = F.entries,
@@ -806,20 +805,20 @@
         lt = q.slice,
         ht = q.toString,
         pt = q.toLocaleString,
-        dt = C("iterator"),
-        vt = C("toStringTag"),
+        dt = j("iterator"),
+        vt = j("toStringTag"),
         gt = A("typed_constructor"),
         yt = A("def_constructor"),
         mt = c.CONSTR,
-        bt = c.TYPED,
-        _t = c.VIEW,
-        wt = j(1, function (t, e) {
+        _t = c.TYPED,
+        bt = c.VIEW,
+        wt = N(1, function (t, e) {
           return Pt(T(t, t[yt]), e);
         }),
-        xt = o(function () {
+        St = o(function () {
           return 1 === new z(new Uint16Array([1]).buffer)[0];
         }),
-        St =
+        xt =
           !!z &&
           !!z.prototype.set &&
           o(function () {
@@ -831,7 +830,7 @@
           return n;
         },
         Et = function (t) {
-          if (w(t) && bt in t) return t;
+          if (w(t) && _t in t) return t;
           throw G(t + " is not a typed array!");
         },
         Pt = function (t, e) {
@@ -846,26 +845,26 @@
           for (var n = 0, r = e.length, i = Pt(t, r); r > n; ) i[n] = e[n++];
           return i;
         },
-        Ct = function (t, e, n) {
+        jt = function (t, e, n) {
           W(t, e, {
             get: function () {
               return this._d[n];
             },
           });
         },
-        jt = function (t) {
+        Nt = function (t) {
           var e,
             n,
             r,
             i,
             o,
             a,
-            c = x(t),
+            c = S(t),
             u = arguments.length,
             f = u > 1 ? arguments[1] : void 0,
             l = void 0 !== f,
             h = O(c);
-          if (null != h && !S(h)) {
+          if (null != h && !x(h)) {
             for (a = h.call(c), r = [], e = 0; !(o = a.next()).done; e++)
               r.push(o.value);
             c = r;
@@ -881,7 +880,7 @@
             i[e] = l ? f(c[e], e) : c[e];
           return i;
         },
-        Nt = function () {
+        Ct = function () {
           for (var t = 0, e = arguments.length, n = Pt(this, e); e > t; )
             n[t] = arguments[t++];
           return n;
@@ -994,7 +993,7 @@
           Et(this);
           var e = kt(arguments[1], 1),
             n = this.length,
-            r = x(t),
+            r = S(t),
             i = v(r.length),
             o = 0;
           if (i + e > n) throw B("Wrong length!");
@@ -1014,7 +1013,7 @@
         Lt = function (t, e) {
           return (
             w(t) &&
-            t[bt] &&
+            t[_t] &&
             "symbol" != typeof e &&
             e in t &&
             String(+e) == String(e)
@@ -1024,12 +1023,12 @@
           return Lt(t, (e = m(e, !0))) ? l(2, t[e]) : D(t, e);
         },
         Ut = function (t, e, n) {
-          return !(Lt(t, (e = m(e, !0))) && w(n) && b(n, "value")) ||
-            b(n, "get") ||
-            b(n, "set") ||
+          return !(Lt(t, (e = m(e, !0))) && w(n) && _(n, "value")) ||
+            _(n, "get") ||
+            _(n, "set") ||
             n.configurable ||
-            (b(n, "writable") && !n.writable) ||
-            (b(n, "enumerable") && !n.enumerable)
+            (_(n, "writable") && !n.writable) ||
+            (_(n, "enumerable") && !n.enumerable)
             ? W(t, e, n)
             : ((t[e] = n.value), t);
         };
@@ -1041,10 +1040,9 @@
         o(function () {
           ht.call({});
         }) &&
-          (ht = pt =
-            function () {
-              return st.call(this);
-            });
+          (ht = pt = function () {
+            return st.call(this);
+          });
       var Wt = p({}, Mt);
       p(Wt, $t),
         h(Wt, dt, $t.values),
@@ -1055,13 +1053,13 @@
           toString: ht,
           toLocaleString: Ft,
         }),
-        Ct(Wt, "buffer", "b"),
-        Ct(Wt, "byteOffset", "o"),
-        Ct(Wt, "byteLength", "l"),
-        Ct(Wt, "length", "e"),
+        jt(Wt, "buffer", "b"),
+        jt(Wt, "byteOffset", "o"),
+        jt(Wt, "byteLength", "l"),
+        jt(Wt, "length", "e"),
         W(Wt, vt, {
           get: function () {
-            return this[bt];
+            return this[_t];
           },
         }),
         (t.exports = function (t, e, n, u) {
@@ -1071,15 +1069,15 @@
             d = i[s],
             y = d || {},
             m = d && E(d),
-            b = !d || !c.ABV,
-            x = {},
-            S = d && d.prototype,
+            _ = !d || !c.ABV,
+            S = {},
+            x = d && d.prototype,
             O = function (t, n) {
               W(t, n, {
                 get: function () {
                   return (function (t, n) {
                     var r = t._d;
-                    return r.v[l](n * e + r.o, xt);
+                    return r.v[l](n * e + r.o, St);
                   })(this, n);
                 },
                 set: function (t) {
@@ -1088,13 +1086,13 @@
                     u &&
                       (r =
                         (r = Math.round(r)) < 0 ? 0 : r > 255 ? 255 : 255 & r),
-                      i.v[p](n * e + i.o, r, xt);
+                      i.v[p](n * e + i.o, r, St);
                   })(this, n, t);
                 },
                 enumerable: !0,
               });
             };
-          b
+          _
             ? ((d = n(function (t, n, r, i) {
                 f(t, d, s, "_d");
                 var o,
@@ -1107,11 +1105,11 @@
                   if (
                     !(
                       n instanceof H ||
-                      "ArrayBuffer" == (u = _(n)) ||
+                      "ArrayBuffer" == (u = b(n)) ||
                       "SharedArrayBuffer" == u
                     )
                   )
-                    return bt in n ? At(d, n) : jt.call(d, n);
+                    return _t in n ? At(d, n) : Nt.call(d, n);
                   (o = n), (p = kt(r, e));
                   var y = n.byteLength;
                   if (void 0 === i) {
@@ -1127,8 +1125,8 @@
                 )
                   O(t, l++);
               })),
-              (S = d.prototype = k(Wt)),
-              h(S, "constructor", d))
+              (x = d.prototype = k(Wt)),
+              h(x, "constructor", d))
             : (o(function () {
                 d(1);
               }) &&
@@ -1144,42 +1142,41 @@
                   f(t, d, s),
                   w(n)
                     ? n instanceof H ||
-                      "ArrayBuffer" == (o = _(n)) ||
+                      "ArrayBuffer" == (o = b(n)) ||
                       "SharedArrayBuffer" == o
                       ? void 0 !== i
                         ? new y(n, kt(r, e), i)
                         : void 0 !== r
                         ? new y(n, kt(r, e))
                         : new y(n)
-                      : bt in n
+                      : _t in n
                       ? At(d, n)
-                      : jt.call(d, n)
+                      : Nt.call(d, n)
                     : new y(g(n))
                 );
               })),
-              Y(
-                m !== Function.prototype ? P(y).concat(P(m)) : P(y),
-                function (t) {
-                  t in d || h(d, t, y[t]);
-                }
-              ),
-              (d.prototype = S),
-              r || (S.constructor = d));
-          var A = S[dt],
-            C = !!A && ("values" == A.name || null == A.name),
-            j = $t.values;
+              Y(m !== Function.prototype ? P(y).concat(P(m)) : P(y), function (
+                t
+              ) {
+                t in d || h(d, t, y[t]);
+              }),
+              (d.prototype = x),
+              r || (x.constructor = d));
+          var A = x[dt],
+            j = !!A && ("values" == A.name || null == A.name),
+            N = $t.values;
           h(d, gt, !0),
-            h(S, bt, s),
-            h(S, _t, !0),
-            h(S, yt, d),
-            (u ? new d(1)[vt] == s : vt in S) ||
-              W(S, vt, {
+            h(x, _t, s),
+            h(x, bt, !0),
+            h(x, yt, d),
+            (u ? new d(1)[vt] == s : vt in x) ||
+              W(x, vt, {
                 get: function () {
                   return s;
                 },
               }),
-            (x[s] = d),
-            a(a.G + a.W + a.F * (d != y), x),
+            (S[s] = d),
+            a(a.G + a.W + a.F * (d != y), S),
             a(a.S, s, { BYTES_PER_ELEMENT: e }),
             a(
               a.S +
@@ -1188,14 +1185,14 @@
                     y.of.call(d, 1);
                   }),
               s,
-              { from: jt, of: Nt }
+              { from: Nt, of: Ct }
             ),
-            "BYTES_PER_ELEMENT" in S || h(S, "BYTES_PER_ELEMENT", e),
+            "BYTES_PER_ELEMENT" in x || h(x, "BYTES_PER_ELEMENT", e),
             a(a.P, s, Mt),
             R(s),
-            a(a.P + a.F * St, s, { set: Rt }),
-            a(a.P + a.F * !C, s, $t),
-            r || S.toString == ht || (S.toString = ht),
+            a(a.P + a.F * xt, s, { set: Rt }),
+            a(a.P + a.F * !j, s, $t),
+            r || x.toString == ht || (x.toString = ht),
             a(
               a.P +
                 a.F *
@@ -1214,13 +1211,13 @@
                     );
                   }) ||
                     !o(function () {
-                      S.toLocaleString.call([1, 2]);
+                      x.toLocaleString.call([1, 2]);
                     })),
               s,
               { toLocaleString: Ft }
             ),
-            (M[s] = C ? A : j),
-            r || C || h(S, dt, j);
+            (M[s] = j ? A : N),
+            r || j || h(x, dt, N);
         });
     } else t.exports = function () {};
   },
@@ -1609,13 +1606,13 @@
           return s.def(l(this, "WeakMap"), t, e);
         },
       },
-      b = (t.exports = n(70)("WeakMap", y, m, s, !0, !0));
+      _ = (t.exports = n(70)("WeakMap", y, m, s, !0, !0));
     h &&
       p &&
       (u((r = s.getConstructor(y, "WeakMap")).prototype, m),
       (c.NEED = !0),
       o(["delete", "has", "get", "set"], function (t) {
-        var e = b.prototype,
+        var e = _.prototype,
           n = e[t];
         a(e, t, function (e, i) {
           if (f(e) && !v(e)) {
@@ -1874,28 +1871,27 @@
       u = n(91),
       s = {},
       f = {};
-    ((e = t.exports =
-      function (t, e, n, l, h) {
-        var p,
-          d,
-          v,
-          g,
-          y = h
-            ? function () {
-                return t;
-              }
-            : u(t),
-          m = r(n, l, e ? 2 : 1),
-          b = 0;
-        if ("function" != typeof y) throw TypeError(t + " is not iterable!");
-        if (o(y)) {
-          for (p = c(t.length); p > b; b++)
-            if ((g = e ? m(a((d = t[b]))[0], d[1]) : m(t[b])) === s || g === f)
-              return g;
-        } else
-          for (v = y.call(t); !(d = v.next()).done; )
-            if ((g = i(v, m, d.value, e)) === s || g === f) return g;
-      }).BREAK = s),
+    ((e = t.exports = function (t, e, n, l, h) {
+      var p,
+        d,
+        v,
+        g,
+        y = h
+          ? function () {
+              return t;
+            }
+          : u(t),
+        m = r(n, l, e ? 2 : 1),
+        _ = 0;
+      if ("function" != typeof y) throw TypeError(t + " is not iterable!");
+      if (o(y)) {
+        for (p = c(t.length); p > _; _++)
+          if ((g = e ? m(a((d = t[_]))[0], d[1]) : m(t[_])) === s || g === f)
+            return g;
+      } else
+        for (v = y.call(t); !(d = v.next()).done; )
+          if ((g = i(v, m, d.value, e)) === s || g === f) return g;
+    }).BREAK = s),
       (e.RETURN = f);
   },
   function (t, e, n) {
@@ -1942,11 +1938,11 @@
       d = n(80);
     t.exports = function (t, e, n, v, g, y) {
       var m = r[t],
-        b = m,
-        _ = g ? "set" : "add",
-        w = b && b.prototype,
-        x = {},
-        S = function (t) {
+        _ = m,
+        b = g ? "set" : "add",
+        w = _ && _.prototype,
+        S = {},
+        x = function (t) {
           var e = w[t];
           o(
             w,
@@ -1973,45 +1969,45 @@
           );
         };
       if (
-        "function" == typeof b &&
+        "function" == typeof _ &&
         (y ||
           (w.forEach &&
             !l(function () {
-              new b().entries().next();
+              new _().entries().next();
             })))
       ) {
-        var k = new b(),
-          E = k[_](y ? {} : -0, 1) != k,
+        var k = new _(),
+          E = k[b](y ? {} : -0, 1) != k,
           P = l(function () {
             k.has(1);
           }),
           O = h(function (t) {
-            new b(t);
+            new _(t);
           }),
           A =
             !y &&
             l(function () {
-              for (var t = new b(), e = 5; e--; ) t[_](e, e);
+              for (var t = new _(), e = 5; e--; ) t[b](e, e);
               return !t.has(-0);
             });
         O ||
-          (((b = e(function (e, n) {
-            s(e, b, t);
-            var r = d(new m(), e, b);
-            return null != n && u(n, g, r[_], r), r;
+          (((_ = e(function (e, n) {
+            s(e, _, t);
+            var r = d(new m(), e, _);
+            return null != n && u(n, g, r[b], r), r;
           })).prototype = w),
-          (w.constructor = b)),
-          (P || A) && (S("delete"), S("has"), g && S("get")),
-          (A || E) && S(_),
+          (w.constructor = _)),
+          (P || A) && (x("delete"), x("has"), g && x("get")),
+          (A || E) && x(b),
           y && w.clear && delete w.clear;
       } else
-        (b = v.getConstructor(e, t, g, _)), a(b.prototype, n), (c.NEED = !0);
+        (_ = v.getConstructor(e, t, g, b)), a(_.prototype, n), (c.NEED = !0);
       return (
-        p(b, t),
-        (x[t] = b),
-        i(i.G + i.W + i.F * (b != m), x),
-        y || v.setStrong(b, t, g),
-        b
+        p(_, t),
+        (S[t] = _),
+        i(i.G + i.W + i.F * (_ != m), S),
+        y || v.setStrong(_, t, g),
+        _
       );
     };
   },
@@ -2026,10 +2022,9 @@
         s = !(!i.ArrayBuffer || !i.DataView),
         f = s,
         l = 0,
-        h =
-          "Int8Array,Uint8Array,Uint8ClampedArray,Int16Array,Uint16Array,Int32Array,Uint32Array,Float32Array,Float64Array".split(
-            ","
-          );
+        h = "Int8Array,Uint8Array,Uint8ClampedArray,Int16Array,Uint16Array,Int32Array,Uint32Array,Float32Array,Float64Array".split(
+          ","
+        );
       l < 9;
 
     )
@@ -2083,10 +2078,9 @@
     };
   },
   function (t, e) {
-    t.exports =
-      "constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(
-        ","
-      );
+    t.exports = "constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(
+      ","
+    );
   },
   function (t, e, n) {
     var r = n(1).document;
@@ -2224,8 +2218,8 @@
     t.exports = function (t, e, n, d, v, g, y) {
       u(n, e, d);
       var m,
-        b,
         _,
+        b,
         w = function (t) {
           if (!h && t in E) return E[t];
           switch (t) {
@@ -2239,20 +2233,20 @@
             return new n(this, t);
           };
         },
-        x = e + " Iterator",
-        S = "values" == v,
+        S = e + " Iterator",
+        x = "values" == v,
         k = !1,
         E = t.prototype,
         P = E[l] || E["@@iterator"] || (v && E[v]),
         O = P || w(v),
-        A = v ? (S ? w("entries") : O) : void 0,
-        C = ("Array" == e && E.entries) || P;
+        A = v ? (x ? w("entries") : O) : void 0,
+        j = ("Array" == e && E.entries) || P;
       if (
-        (C &&
-          (_ = f(C.call(new t()))) !== Object.prototype &&
-          _.next &&
-          (s(_, x, !0), r || "function" == typeof _[l] || a(_, l, p)),
-        S &&
+        (j &&
+          (b = f(j.call(new t()))) !== Object.prototype &&
+          b.next &&
+          (s(b, S, !0), r || "function" == typeof b[l] || a(b, l, p)),
+        x &&
           P &&
           "values" !== P.name &&
           ((k = !0),
@@ -2261,18 +2255,18 @@
           })),
         (r && !y) || (!h && !k && E[l]) || a(E, l, O),
         (c[e] = O),
-        (c[x] = p),
+        (c[S] = p),
         v)
       )
         if (
           ((m = {
-            values: S ? O : w("values"),
+            values: x ? O : w("values"),
             keys: g ? O : w("keys"),
             entries: A,
           }),
           y)
         )
-          for (b in m) b in E || o(E, b, m[b]);
+          for (_ in m) _ in E || o(E, _, m[_]);
         else i(i.P + i.F * (h || k), e, m);
       return m;
     };
@@ -2446,27 +2440,27 @@
       g = n(55),
       y = n(97).set,
       m = n(244)(),
-      b = n(128),
-      _ = n(245),
+      _ = n(128),
+      b = n(245),
       w = n(68),
-      x = n(129),
-      S = u.TypeError,
+      S = n(129),
+      x = u.TypeError,
       k = u.process,
       E = k && k.versions,
       P = (E && E.v8) || "",
       O = u.Promise,
       A = "process" == f(k),
-      C = function () {},
-      j = (i = b.f),
-      N = !!(function () {
+      j = function () {},
+      N = (i = _.f),
+      C = !!(function () {
         try {
           var t = O.resolve(1),
             e = ((t.constructor = {})[n(5)("species")] = function (t) {
-              t(C, C);
+              t(j, j);
             });
           return (
             (A || "function" == typeof PromiseRejectionEvent) &&
-            t.then(C) instanceof e &&
+            t.then(j) instanceof e &&
             0 !== P.indexOf("6.6") &&
             -1 === w.indexOf("Chrome/66")
           );
@@ -2502,7 +2496,7 @@
                             (n = c(r)),
                             f && (f.exit(), (a = !0))),
                         n === e.promise
-                          ? s(S("Promise-chain cycle"))
+                          ? s(x("Promise-chain cycle"))
                           : (o = T(n))
                           ? o.call(n, u, s)
                           : u(n))
@@ -2528,7 +2522,7 @@
             o = I(t);
           if (
             (o &&
-              ((e = _(function () {
+              ((e = b(function () {
                 A
                   ? k.emit("unhandledRejection", i, t)
                   : (n = u.onunhandledrejection)
@@ -2570,7 +2564,7 @@
         if (!n._d) {
           (n._d = !0), (n = n._w || n);
           try {
-            if (n === t) throw S("Promise can't be resolved itself");
+            if (n === t) throw x("Promise can't be resolved itself");
             (e = T(t))
               ? m(function () {
                   var r = { _w: n, _d: !1 };
@@ -2586,7 +2580,7 @@
           }
         }
       };
-    N ||
+    C ||
       ((O = function (t) {
         d(this, O, "Promise", "_h"), p(t), r.call(this);
         try {
@@ -2605,7 +2599,7 @@
           (this._n = !1);
       }).prototype = n(50)(O.prototype, {
         then: function (t, e) {
-          var n = j(g(this, O));
+          var n = N(g(this, O));
           return (
             (n.ok = "function" != typeof t || t),
             (n.fail = "function" == typeof e && e),
@@ -2626,42 +2620,41 @@
           (this.resolve = s(L, t, 1)),
           (this.reject = s($, t, 1));
       }),
-      (b.f = j =
-        function (t) {
-          return t === O || t === a ? new o(t) : i(t);
-        })),
-      l(l.G + l.W + l.F * !N, { Promise: O }),
+      (_.f = N = function (t) {
+        return t === O || t === a ? new o(t) : i(t);
+      })),
+      l(l.G + l.W + l.F * !C, { Promise: O }),
       n(44)(O, "Promise"),
       n(48)("Promise"),
       (a = n(7).Promise),
-      l(l.S + l.F * !N, "Promise", {
+      l(l.S + l.F * !C, "Promise", {
         reject: function (t) {
-          var e = j(this);
+          var e = N(this);
           return (0, e.reject)(t), e.promise;
         },
       }),
-      l(l.S + l.F * (c || !N), "Promise", {
+      l(l.S + l.F * (c || !C), "Promise", {
         resolve: function (t) {
-          return x(c && this === a ? O : this, t);
+          return S(c && this === a ? O : this, t);
         },
       }),
       l(
         l.S +
           l.F *
             !(
-              N &&
+              C &&
               n(63)(function (t) {
-                O.all(t).catch(C);
+                O.all(t).catch(j);
               })
             ),
         "Promise",
         {
           all: function (t) {
             var e = this,
-              n = j(e),
+              n = N(e),
               r = n.resolve,
               i = n.reject,
-              o = _(function () {
+              o = b(function () {
                 var n = [],
                   o = 0,
                   a = 1;
@@ -2680,9 +2673,9 @@
           },
           race: function (t) {
             var e = this,
-              n = j(e),
+              n = N(e),
               r = n.reject,
-              i = _(function () {
+              i = b(function () {
                 v(t, !1, function (t) {
                   e.resolve(t).then(n.resolve, r);
                 });
@@ -2715,7 +2708,7 @@
           delete y[t], e();
         }
       },
-      b = function (t) {
+      _ = function (t) {
         m.call(t.data);
       };
     (h && p) ||
@@ -2742,7 +2735,7 @@
           })
         : d
         ? ((o = (i = new d()).port2),
-          (i.port1.onmessage = b),
+          (i.port1.onmessage = _),
           (r = a(o.postMessage, o, 1)))
         : f.addEventListener &&
           "function" == typeof postMessage &&
@@ -2750,7 +2743,7 @@
         ? ((r = function (t) {
             f.postMessage(t + "", "*");
           }),
-          f.addEventListener("message", b, !1))
+          f.addEventListener("message", _, !1))
         : (r =
             "onreadystatechange" in s("script")
               ? function (t) {
@@ -2800,19 +2793,19 @@
       g = n(92),
       y = n(44),
       m = "prototype",
-      b = "Wrong index!",
-      _ = r.ArrayBuffer,
+      _ = "Wrong index!",
+      b = r.ArrayBuffer,
       w = r.DataView,
-      x = r.Math,
-      S = r.RangeError,
+      S = r.Math,
+      x = r.RangeError,
       k = r.Infinity,
-      E = _,
-      P = x.abs,
-      O = x.pow,
-      A = x.floor,
-      C = x.log,
-      j = x.LN2,
-      N = i ? "_b" : "buffer",
+      E = b,
+      P = S.abs,
+      O = S.pow,
+      A = S.floor,
+      j = S.log,
+      N = S.LN2,
+      C = i ? "_b" : "buffer",
       T = i ? "_l" : "byteLength",
       F = i ? "_o" : "byteOffset";
     function M(t, e, n) {
@@ -2829,7 +2822,7 @@
       for (
         (t = P(t)) != t || t === k
           ? ((i = t != t ? 1 : 0), (r = u))
-          : ((r = A(C(t) / j)),
+          : ((r = A(j(t) / N)),
             t * (o = O(2, -r)) < 1 && (r--, (o *= 2)),
             (t += r + s >= 1 ? f / o : f * O(2, 1 - s)) * o >= 2 &&
               (r++, (o /= 2)),
@@ -2893,44 +2886,44 @@
     }
     function B(t, e, n, r) {
       var i = p(+n);
-      if (i + e > t[T]) throw S(b);
-      var o = t[N]._b,
+      if (i + e > t[T]) throw x(_);
+      var o = t[C]._b,
         a = i + t[F],
         c = o.slice(a, a + e);
       return r ? c : c.reverse();
     }
     function G(t, e, n, r, i, o) {
       var a = p(+n);
-      if (a + e > t[T]) throw S(b);
-      for (var c = t[N]._b, u = a + t[F], s = r(+i), f = 0; f < e; f++)
+      if (a + e > t[T]) throw x(_);
+      for (var c = t[C]._b, u = a + t[F], s = r(+i), f = 0; f < e; f++)
         c[u + f] = s[o ? f : e - f - 1];
     }
     if (a.ABV) {
       if (
         !s(function () {
-          _(1);
+          b(1);
         }) ||
         !s(function () {
-          new _(-1);
+          new b(-1);
         }) ||
         s(function () {
-          return new _(), new _(1.5), new _(NaN), "ArrayBuffer" != _.name;
+          return new b(), new b(1.5), new b(NaN), "ArrayBuffer" != b.name;
         })
       ) {
         for (
           var z,
-            q = ((_ = function (t) {
-              return f(this, _), new E(p(t));
+            q = ((b = function (t) {
+              return f(this, b), new E(p(t));
             })[m] = E[m]),
             H = d(E),
             J = 0;
           H.length > J;
 
         )
-          (z = H[J++]) in _ || c(_, z, E[z]);
-        o || (q.constructor = _);
+          (z = H[J++]) in b || c(b, z, E[z]);
+        o || (q.constructor = b);
       }
-      var Y = new w(new _(2)),
+      var Y = new w(new b(2)),
         K = w[m].setInt8;
       Y.setInt8(0, 2147483648),
         Y.setInt8(1, 2147483649),
@@ -2948,22 +2941,22 @@
             !0
           );
     } else
-      (_ = function (t) {
-        f(this, _, "ArrayBuffer");
+      (b = function (t) {
+        f(this, b, "ArrayBuffer");
         var e = p(t);
         (this._b = g.call(new Array(e), 0)), (this[T] = e);
       }),
         (w = function (t, e, n) {
-          f(this, w, "DataView"), f(t, _, "DataView");
+          f(this, w, "DataView"), f(t, b, "DataView");
           var r = t[T],
             i = l(e);
-          if (i < 0 || i > r) throw S("Wrong offset!");
+          if (i < 0 || i > r) throw x("Wrong offset!");
           if (i + (n = void 0 === n ? r - i : h(n)) > r)
-            throw S("Wrong length!");
-          (this[N] = t), (this[F] = i), (this[T] = n);
+            throw x("Wrong length!");
+          (this[C] = t), (this[F] = i), (this[T] = n);
         }),
         i &&
-          (D(_, "byteLength", "_l"),
+          (D(b, "byteLength", "_l"),
           D(w, "buffer", "_b"),
           D(w, "byteLength", "_l"),
           D(w, "byteOffset", "_o")),
@@ -3019,10 +3012,10 @@
             G(this, 8, t, U, e, arguments[2]);
           },
         });
-    y(_, "ArrayBuffer"),
+    y(b, "ArrayBuffer"),
       y(w, "DataView"),
       c(w[m], a.VIEW, !0),
-      (e.ArrayBuffer = _),
+      (e.ArrayBuffer = b),
       (e.DataView = w);
   },
   function (t, e) {
@@ -3306,17 +3299,17 @@
           : m(e);
       };
       for (
-        var b,
-          _ = n(8)
+        var _,
+          b = n(8)
             ? s(d)
             : "MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,isFinite,isInteger,isNaN,isSafeInteger,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,parseFloat,parseInt,isInteger".split(
                 ","
               ),
           w = 0;
-        _.length > w;
+        b.length > w;
         w++
       )
-        i(d, (b = _[w])) && !i(p, b) && l(p, b, f(d, b));
+        i(d, (_ = b[w])) && !i(p, _) && l(p, _, f(d, _));
       (p.prototype = v), (v.constructor = p), n(11)(r, "Number", p);
     }
   },
@@ -3585,26 +3578,26 @@
                 (s.unicode ? "u" : "") +
                 (p ? "y" : "g"),
               m = new v(p ? s : "^(?:" + s.source + ")", y),
-              b = void 0 === e ? 4294967295 : e >>> 0;
-            if (0 === b) return [];
+              _ = void 0 === e ? 4294967295 : e >>> 0;
+            if (0 === _) return [];
             if (0 === h.length) return null === u(m, h) ? [h] : [];
-            for (var _ = 0, w = 0, x = []; w < h.length; ) {
+            for (var b = 0, w = 0, S = []; w < h.length; ) {
               m.lastIndex = p ? w : 0;
-              var S,
+              var x,
                 k = u(m, p ? h : h.slice(w));
               if (
                 null === k ||
-                (S = l(c(m.lastIndex + (p ? 0 : w)), h.length)) === _
+                (x = l(c(m.lastIndex + (p ? 0 : w)), h.length)) === b
               )
                 w = a(h, w, g);
               else {
-                if ((x.push(h.slice(_, w)), x.length === b)) return x;
+                if ((S.push(h.slice(b, w)), S.length === _)) return S;
                 for (var E = 1; E <= k.length - 1; E++)
-                  if ((x.push(k[E]), x.length === b)) return x;
-                w = _ = S;
+                  if ((S.push(k[E]), S.length === _)) return S;
+                w = b = x;
               }
             }
-            return x.push(h.slice(_)), x;
+            return S.push(h.slice(b)), S;
           },
         ]
       );
@@ -3722,15 +3715,14 @@
         return (
           o
             ? (o.v = n)
-            : ((t._l = o =
-                {
-                  i: (i = p(e, !0)),
-                  k: e,
-                  v: n,
-                  p: (r = t._l),
-                  n: void 0,
-                  r: !1,
-                }),
+            : ((t._l = o = {
+                i: (i = p(e, !0)),
+                k: e,
+                v: n,
+                p: (r = t._l),
+                n: void 0,
+                r: !1,
+              }),
               t._f || (t._f = o),
               r && (r.n = o),
               t[v]++,
@@ -3955,7 +3947,7 @@
               if (r === h) throw new Error("Generator is already running");
               if (r === p) {
                 if ("throw" === i) throw o;
-                return C();
+                return j();
               }
               for (n.method = i, n.arg = o; ; ) {
                 var a = n.delegate;
@@ -4005,18 +3997,18 @@
       m[o] = function () {
         return this;
       };
-      var b = Object.getPrototypeOf,
-        _ = b && b(b(A([])));
-      _ && _ !== n && r.call(_, o) && (m = _);
+      var _ = Object.getPrototypeOf,
+        b = _ && _(_(A([])));
+      b && b !== n && r.call(b, o) && (m = b);
       var w = (y.prototype = v.prototype = Object.create(m));
-      function x(t) {
+      function S(t) {
         ["next", "throw", "return"].forEach(function (e) {
           t[e] = function (t) {
             return this._invoke(e, t);
           };
         });
       }
-      function S(t) {
+      function x(t) {
         var e;
         this._invoke = function (n, i) {
           function o() {
@@ -4117,9 +4109,9 @@
             return (a.next = a);
           }
         }
-        return { next: C };
+        return { next: j };
       }
-      function C() {
+      function j() {
         return { value: e, done: !0 };
       }
       return (
@@ -4145,20 +4137,20 @@
         (t.awrap = function (t) {
           return { __await: t };
         }),
-        x(S.prototype),
-        (S.prototype[a] = function () {
+        S(x.prototype),
+        (x.prototype[a] = function () {
           return this;
         }),
-        (t.AsyncIterator = S),
+        (t.AsyncIterator = x),
         (t.async = function (e, n, r, i) {
-          var o = new S(u(e, n, r, i));
+          var o = new x(u(e, n, r, i));
           return t.isGeneratorFunction(n)
             ? o
             : o.next().then(function (t) {
                 return t.done ? t.value : o.next();
               });
         }),
-        x(w),
+        S(w),
         (w[c] = "Generator"),
         (w[o] = function () {
           return this;
@@ -4331,7 +4323,7 @@
   },
   function (t) {
     t.exports = JSON.parse(
-      '{"name":"light-entity-card","version":"4.5.0","description":"A light-entity card for Home Assistant Lovelace UI","keywords":["home-assistant","homeassistant","hass","automation","lovelace","custom-cards","light-entity"],"repository":"git@github.com:ljmerza/light-entity-card.git","author":"Leonardo Merza <ljmerza@gmail.com>","license":"MIT","dependencies":{"@babel/polyfill":"^7.4.3","core-js":"^2.6.5","lit":"^2.0.0-rc.2","lit-element":"^2.1.0"},"devDependencies":{"@babel/cli":"^7.4.3","@babel/core":"^7.4.3","@babel/preset-env":"^7.4.3","@babel/register":"^7.4.0","babel-loader":"^8.0.5","eslint":"^5.16.0","eslint-config-airbnb-base":"^13.1.0","eslint-plugin-import":"^2.17.1","webpack":"^4.30.0","webpack-cli":"^3.3.0","webpack-merge":"^4.2.1"},"scripts":{"lint":"eslint ./src","start":"webpack --watch --config webpack/config.dev.js","build":"webpack --config webpack/config.prod.js"}}'
+      '{"name":"light-entity-card","version":"4.2.2","description":"A light-entity card for Home Assistant Lovelace UI","keywords":["home-assistant","homeassistant","hass","automation","lovelace","custom-cards","light-entity"],"repository":"git@github.com:ljmerza/light-entity-card.git","author":"Leonardo Merza <ljmerza@gmail.com>","license":"MIT","dependencies":{"@babel/polyfill":"^7.4.3","core-js":"^2.6.5","lit-element":"^2.1.0"},"devDependencies":{"@babel/cli":"^7.4.3","@babel/core":"^7.4.3","@babel/preset-env":"^7.4.3","@babel/register":"^7.4.0","babel-loader":"^8.0.5","eslint":"^5.16.0","eslint-config-airbnb-base":"^13.1.0","eslint-plugin-import":"^2.17.1","webpack":"^4.30.0","webpack-cli":"^3.3.0","webpack-merge":"^4.2.1"},"scripts":{"lint":"eslint ./src","start":"webpack --watch --config webpack/config.dev.js","build":"webpack --config webpack/config.prod.js"}}'
     );
   },
   function (t, e, n) {
@@ -5675,31 +5667,31 @@
             l.lastIndex = 0;
           }
           for (var m = []; ; ) {
-            var b = u(l, h);
-            if (null === b) break;
-            if ((m.push(b), !g)) break;
-            "" === String(b[0]) && (l.lastIndex = c(h, o(l.lastIndex), y));
+            var _ = u(l, h);
+            if (null === _) break;
+            if ((m.push(_), !g)) break;
+            "" === String(_[0]) && (l.lastIndex = c(h, o(l.lastIndex), y));
           }
-          for (var _, w = "", x = 0, S = 0; S < m.length; S++) {
-            b = m[S];
+          for (var b, w = "", S = 0, x = 0; x < m.length; x++) {
+            _ = m[x];
             for (
-              var k = String(b[0]),
-                E = s(f(a(b.index), h.length), 0),
+              var k = String(_[0]),
+                E = s(f(a(_.index), h.length), 0),
                 P = [],
                 O = 1;
-              O < b.length;
+              O < _.length;
               O++
             )
-              P.push(void 0 === (_ = b[O]) ? _ : String(_));
-            var A = b.groups;
+              P.push(void 0 === (b = _[O]) ? b : String(b));
+            var A = _.groups;
             if (p) {
-              var C = [k].concat(P, E, h);
-              void 0 !== A && C.push(A);
-              var j = String(e.apply(void 0, C));
-            } else j = v(k, h, E, P, A, e);
-            E >= x && ((w += h.slice(x, E) + j), (x = E + k.length));
+              var j = [k].concat(P, E, h);
+              void 0 !== A && j.push(A);
+              var N = String(e.apply(void 0, j));
+            } else N = v(k, h, E, P, A, e);
+            E >= S && ((w += h.slice(S, E) + N), (S = E + k.length));
           }
-          return w + h.slice(x);
+          return w + h.slice(S);
         },
       ];
       function v(t, e, r, o, a, c) {
@@ -6426,17 +6418,17 @@
           g = t & u.B,
           y = t & u.W,
           m = p ? i : i[e] || (i[e] = {}),
-          b = m.prototype,
-          _ = p ? r : d ? r[e] : (r[e] || {}).prototype;
+          _ = m.prototype,
+          b = p ? r : d ? r[e] : (r[e] || {}).prototype;
         for (s in (p && (n = e), n))
-          ((f = !h && _ && void 0 !== _[s]) && c(m, s)) ||
-            ((l = f ? _[s] : n[s]),
+          ((f = !h && b && void 0 !== b[s]) && c(m, s)) ||
+            ((l = f ? b[s] : n[s]),
             (m[s] =
-              p && "function" != typeof _[s]
+              p && "function" != typeof b[s]
                 ? n[s]
                 : g && f
                 ? o(l, r)
-                : y && _[s] == l
+                : y && b[s] == l
                 ? (function (t) {
                     var e = function (e, n, r) {
                       if (this instanceof t) {
@@ -6459,7 +6451,7 @@
                 : l),
             v &&
               (((m.virtual || (m.virtual = {}))[s] = l),
-              t & u.R && b && !b[s] && a(b, s, l)));
+              t & u.R && _ && !_[s] && a(_, s, l)));
       };
     (u.F = 1),
       (u.G = 2),
@@ -6664,22 +6656,22 @@
             if ((c++, 1 === d.nodeType)) {
               if (d.hasAttributes()) {
                 for (
-                  var y = d.attributes, m = y.length, b = 0, _ = 0;
-                  _ < m;
-                  _++
+                  var y = d.attributes, m = y.length, _ = 0, b = 0;
+                  b < m;
+                  b++
                 )
-                  p(y[_].name, "$lit$") && b++;
-                for (; b-- > 0; ) {
+                  p(y[b].name, "$lit$") && _++;
+                for (; _-- > 0; ) {
                   var w = f[u],
-                    x = g.exec(w)[2],
-                    S = x.toLowerCase() + "$lit$",
-                    k = d.getAttribute(S);
-                  d.removeAttribute(S);
+                    S = g.exec(w)[2],
+                    x = S.toLowerCase() + "$lit$",
+                    k = d.getAttribute(x);
+                  d.removeAttribute(x);
                   var E = k.split(l);
                   this.parts.push({
                     type: "attribute",
                     index: c,
-                    name: x,
+                    name: S,
                     strings: E,
                   }),
                     (u += E.length - 1);
@@ -6691,13 +6683,13 @@
               var P = d.data;
               if (P.indexOf(s) >= 0) {
                 for (
-                  var O = d.parentNode, A = P.split(l), C = A.length - 1, j = 0;
-                  j < C;
-                  j++
+                  var O = d.parentNode, A = P.split(l), j = A.length - 1, N = 0;
+                  N < j;
+                  N++
                 ) {
-                  var N = void 0,
-                    T = A[j];
-                  if ("" === T) N = v();
+                  var C = void 0,
+                    T = A[N];
+                  if ("" === T) C = v();
                   else {
                     var F = g.exec(T);
                     null !== F &&
@@ -6707,15 +6699,15 @@
                         F[1] +
                         F[2].slice(0, -"$lit$".length) +
                         F[3]),
-                      (N = document.createTextNode(T));
+                      (C = document.createTextNode(T));
                   }
-                  O.insertBefore(N, d),
+                  O.insertBefore(C, d),
                     this.parts.push({ type: "node", index: ++c });
                 }
-                "" === A[C]
+                "" === A[j]
                   ? (O.insertBefore(v(), d), r.push(d))
-                  : (d.data = A[C]),
-                  (u += C);
+                  : (d.data = A[j]),
+                  (u += j);
               }
             } else if (8 === d.nodeType)
               if (d.data === s) {
@@ -6746,8 +6738,7 @@
       v = function () {
         return document.createComment("");
       },
-      g =
-        /([ \x09\x0a\x0c\x0d])([^\0-\x1F\x7F-\x9F "'>=/]+)([ \x09\x0a\x0c\x0d]*=[ \x09\x0a\x0c\x0d]*(?:[^ \x09\x0a\x0c\x0d"'`<>=]*|"[^"]*|'[^']*))$/;
+      g = /([ \x09\x0a\x0c\x0d])([^\0-\x1F\x7F-\x9F "'>=/]+)([ \x09\x0a\x0c\x0d]*=[ \x09\x0a\x0c\x0d]*(?:[^ \x09\x0a\x0c\x0d"'`<>=]*|"[^"]*|'[^']*))$/;
     function y(t) {
       return (
         (function (t) {
@@ -6793,7 +6784,7 @@
      * subject to an additional IP rights grant found at
      * http://polymer.github.io/PATENTS.txt
      */
-    var b = (function () {
+    var _ = (function () {
       function t(e, n, r) {
         !(function (t, e) {
           if (!(t instanceof e))
@@ -6907,7 +6898,7 @@
         t
       );
     })();
-    function _(t, e) {
+    function b(t, e) {
       if (!(t instanceof e))
         throw new TypeError("Cannot call a class as a function");
     }
@@ -6920,7 +6911,7 @@
           Object.defineProperty(t, r.key, r);
       }
     }
-    function x(t, e, n) {
+    function S(t, e, n) {
       return e && w(t.prototype, e), n && w(t, n), t;
     }
     /**
@@ -6935,16 +6926,16 @@
      * Code distributed by Google as part of the polymer project is also
      * subject to an additional IP rights grant found at
      * http://polymer.github.io/PATENTS.txt
-     */ var S = (function () {
+     */ var x = (function () {
       function t(e, n, r, i) {
-        _(this, t),
+        b(this, t),
           (this.strings = e),
           (this.values = n),
           (this.type = r),
           (this.processor = i);
       }
       return (
-        x(t, [
+        S(t, [
           {
             key: "getHTML",
             value: function () {
@@ -7031,11 +7022,11 @@
           return (t.__proto__ = e), t;
         })(t, e);
     }
-    function C(t, e) {
+    function j(t, e) {
       if (!(t instanceof e))
         throw new TypeError("Cannot call a class as a function");
     }
-    function j(t, e) {
+    function N(t, e) {
       for (var n = 0; n < e.length; n++) {
         var r = e[n];
         (r.enumerable = r.enumerable || !1),
@@ -7044,8 +7035,8 @@
           Object.defineProperty(t, r.key, r);
       }
     }
-    function N(t, e, n) {
-      return e && j(t.prototype, e), n && j(t, n), t;
+    function C(t, e, n) {
+      return e && N(t.prototype, e), n && N(t, n), t;
     }
     function T(t) {
       return (T =
@@ -7082,7 +7073,7 @@
       },
       I = (function () {
         function t(e, n, r) {
-          C(this, t),
+          j(this, t),
             (this.dirty = !0),
             (this.element = e),
             (this.name = n),
@@ -7092,7 +7083,7 @@
             this.parts[i] = this._createPart();
         }
         return (
-          N(t, [
+          C(t, [
             {
               key: "_createPart",
               value: function () {
@@ -7155,10 +7146,10 @@
       })(),
       R = (function () {
         function t(e) {
-          C(this, t), (this.value = void 0), (this.committer = e);
+          j(this, t), (this.value = void 0), (this.committer = e);
         }
         return (
-          N(t, [
+          C(t, [
             {
               key: "setValue",
               value: function (t) {
@@ -7183,13 +7174,13 @@
       })(),
       $ = (function () {
         function t(e) {
-          C(this, t),
+          j(this, t),
             (this.value = void 0),
             (this.__pendingValue = void 0),
             (this.options = e);
         }
         return (
-          N(t, [
+          C(t, [
             {
               key: "appendInto",
               value: function (t) {
@@ -7235,7 +7226,7 @@
                 e !== c &&
                   (F(e)
                     ? e !== this.value && this.__commitText(e)
-                    : e instanceof S
+                    : e instanceof x
                     ? this.__commitTemplateResult(e)
                     : e instanceof Node
                     ? this.__commitNode(e)
@@ -7275,10 +7266,10 @@
               key: "__commitTemplateResult",
               value: function (t) {
                 var e = this.options.templateFactory(t);
-                if (this.value instanceof b && this.value.template === e)
+                if (this.value instanceof _ && this.value.template === e)
                   this.value.update(t.values);
                 else {
-                  var n = new b(e, t.processor, this.options),
+                  var n = new _(e, t.processor, this.options),
                     r = n._clone();
                   n.update(t.values), this.__commitNode(r), (this.value = n);
                 }
@@ -7340,7 +7331,7 @@
       L = (function () {
         function t(e, n, r) {
           if (
-            (C(this, t),
+            (j(this, t),
             (this.value = void 0),
             (this.__pendingValue = void 0),
             2 !== r.length || "" !== r[0] || "" !== r[1])
@@ -7351,7 +7342,7 @@
           (this.element = e), (this.name = n), (this.strings = r);
         }
         return (
-          N(t, [
+          C(t, [
             {
               key: "setValue",
               value: function (t) {
@@ -7384,7 +7375,7 @@
         function e(t, n, r) {
           var i;
           return (
-            C(this, e),
+            j(this, e),
             ((i = k(this, P(e).call(this, t, n, r))).single =
               2 === r.length && "" === r[0] && "" === r[1]),
             i
@@ -7392,7 +7383,7 @@
         }
         return (
           O(e, I),
-          N(e, [
+          C(e, [
             {
               key: "_createPart",
               value: function () {
@@ -7421,7 +7412,7 @@
       })(),
       U = (function (t) {
         function e() {
-          return C(this, e), k(this, P(e).apply(this, arguments));
+          return j(this, e), k(this, P(e).apply(this, arguments));
         }
         return O(e, R), e;
       })(),
@@ -7438,7 +7429,7 @@
     var B = (function () {
         function t(e, n, r) {
           var i = this;
-          C(this, t),
+          j(this, t),
             (this.value = void 0),
             (this.__pendingValue = void 0),
             (this.element = e),
@@ -7449,7 +7440,7 @@
             });
         }
         return (
-          N(t, [
+          C(t, [
             {
               key: "setValue",
               value: function (t) {
@@ -7633,7 +7624,7 @@
           r++
         )
           n[r - 1] = arguments[r];
-        return new S(t, n, "html", q);
+        return new x(t, n, "html", q);
       },
       X = 133;
     function Z(t, e) {
@@ -7999,14 +7990,14 @@
       mt = function (t, e) {
         return e !== t && (e == e || t == t);
       },
-      bt = {
+      _t = {
         attribute: !0,
         type: String,
         converter: yt,
         reflect: !1,
         hasChanged: mt,
       },
-      _t = Promise.resolve(!0),
+      bt = Promise.resolve(!0),
       wt = (function (t) {
         function e() {
           var t;
@@ -8017,7 +8008,7 @@
             })(this, e),
             ((t = ht(this, gt(e).call(this)))._updateState = 0),
             (t._instanceProperties = void 0),
-            (t._updatePromise = _t),
+            (t._updatePromise = bt),
             (t._hasConnectedResolver = void 0),
             (t._changedProperties = new Map()),
             (t._reflectingProperties = void 0),
@@ -8092,7 +8083,7 @@
                 var n =
                     arguments.length > 2 && void 0 !== arguments[2]
                       ? arguments[2]
-                      : bt,
+                      : _t,
                   r = this.constructor,
                   i = r._attributeNameForProperty(t, n);
                 if (void 0 !== i) {
@@ -8113,7 +8104,7 @@
                   var n = this.constructor,
                     r = n._attributeToPropertyMap.get(t);
                   if (void 0 !== r) {
-                    var i = n._classProperties.get(r) || bt;
+                    var i = n._classProperties.get(r) || _t;
                     (this._updateState = 16 | this._updateState),
                       (this[r] = n._propertyValueFromAttribute(e, i)),
                       (this._updateState = -17 & this._updateState);
@@ -8127,7 +8118,7 @@
                 var n = !0;
                 if (void 0 !== t) {
                   var r = this.constructor,
-                    i = r._classProperties.get(t) || bt;
+                    i = r._classProperties.get(t) || _t;
                   r._valueHasChanged(this[t], e, i.hasChanged)
                     ? (this._changedProperties.has(t) ||
                         this._changedProperties.set(t, e),
@@ -8340,7 +8331,7 @@
                 var e =
                   arguments.length > 1 && void 0 !== arguments[1]
                     ? arguments[1]
-                    : bt;
+                    : _t;
                 if (
                   (this._ensureClassProperties(),
                   this._classProperties.set(t, e),
@@ -8472,7 +8463,7 @@
         );
       })();
     wt.finalized = !0;
-    function xt(t, e) {
+    function St(t, e) {
       for (var n = 0; n < e.length; n++) {
         var r = e[n];
         (r.enumerable = r.enumerable || !1),
@@ -8491,7 +8482,7 @@ found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
 part of the polymer project is also subject to an additional IP rights grant
 found at http://polymer.github.io/PATENTS.txt
 */
-    var St =
+    var xt =
         "adoptedStyleSheets" in Document.prototype &&
         "replace" in CSSStyleSheet.prototype,
       kt = Symbol(),
@@ -8524,7 +8515,7 @@ found at http://polymer.github.io/PATENTS.txt
               get: function () {
                 return (
                   void 0 === this._styleSheet &&
-                    (St
+                    (xt
                       ? ((this._styleSheet = new CSSStyleSheet()),
                         this._styleSheet.replaceSync(this.cssText))
                       : (this._styleSheet = null)),
@@ -8532,8 +8523,8 @@ found at http://polymer.github.io/PATENTS.txt
                 );
               },
             },
-          ]) && xt(e.prototype, n),
-          r && xt(e, r),
+          ]) && St(e.prototype, n),
+          r && St(e, r),
           t
         );
       })(),
@@ -8574,7 +8565,7 @@ found at http://polymer.github.io/PATENTS.txt
                 : typeof t;
             })(t);
     }
-    function Ct(t, e) {
+    function jt(t, e) {
       for (var n = 0; n < e.length; n++) {
         var r = e[n];
         (r.enumerable = r.enumerable || !1),
@@ -8583,7 +8574,7 @@ found at http://polymer.github.io/PATENTS.txt
           Object.defineProperty(t, r.key, r);
       }
     }
-    function jt(t, e) {
+    function Nt(t, e) {
       return !e || ("object" !== At(e) && "function" != typeof e)
         ? (function (t) {
             if (void 0 === t)
@@ -8594,8 +8585,8 @@ found at http://polymer.github.io/PATENTS.txt
           })(t)
         : e;
     }
-    function Nt(t, e, n) {
-      return (Nt =
+    function Ct(t, e, n) {
+      return (Ct =
         "undefined" != typeof Reflect && Reflect.get
           ? Reflect.get
           : function (t, e, n) {
@@ -8684,7 +8675,7 @@ found at http://polymer.github.io/PATENTS.txt
               if (!(t instanceof e))
                 throw new TypeError("Cannot call a class as a function");
             })(this, e),
-            jt(this, Tt(e).apply(this, arguments))
+            Nt(this, Tt(e).apply(this, arguments))
           );
         }
         var n, r, i;
@@ -8704,7 +8695,7 @@ found at http://polymer.github.io/PATENTS.txt
             {
               key: "finalize",
               value: function () {
-                Nt(Tt(e), "finalize", this).call(this),
+                Ct(Tt(e), "finalize", this).call(this),
                   (this._styles = this.hasOwnProperty(
                     JSCompiler_renameProperty("styles", this)
                   )
@@ -8734,7 +8725,7 @@ found at http://polymer.github.io/PATENTS.txt
             {
               key: "initialize",
               value: function () {
-                Nt(Tt(e.prototype), "initialize", this).call(this),
+                Ct(Tt(e.prototype), "initialize", this).call(this),
                   (this.renderRoot = this.createRenderRoot()),
                   window.ShadowRoot &&
                     this.renderRoot instanceof window.ShadowRoot &&
@@ -8753,7 +8744,7 @@ found at http://polymer.github.io/PATENTS.txt
                 var t = this.constructor._styles;
                 0 !== t.length &&
                   (void 0 === window.ShadyCSS || window.ShadyCSS.nativeShadow
-                    ? St
+                    ? xt
                       ? (this.renderRoot.adoptedStyleSheets = t.map(function (
                           t
                         ) {
@@ -8771,7 +8762,7 @@ found at http://polymer.github.io/PATENTS.txt
             {
               key: "connectedCallback",
               value: function () {
-                Nt(Tt(e.prototype), "connectedCallback", this).call(this),
+                Ct(Tt(e.prototype), "connectedCallback", this).call(this),
                   this.hasUpdated &&
                     void 0 !== window.ShadyCSS &&
                     window.ShadyCSS.styleElement(this);
@@ -8781,9 +8772,9 @@ found at http://polymer.github.io/PATENTS.txt
               key: "update",
               value: function (t) {
                 var n = this;
-                Nt(Tt(e.prototype), "update", this).call(this, t);
+                Ct(Tt(e.prototype), "update", this).call(this, t);
                 var r = this.render();
-                r instanceof S &&
+                r instanceof x &&
                   this.constructor.render(r, this.renderRoot, {
                     scopeName: this.localName,
                     eventContext: this,
@@ -8797,8 +8788,8 @@ found at http://polymer.github.io/PATENTS.txt
               },
             },
             { key: "render", value: function () {} },
-          ]) && Ct(n.prototype, r),
-          i && Ct(n, i),
+          ]) && jt(n.prototype, r),
+          i && jt(n, i),
           e
         );
       })();
@@ -8825,110 +8816,103 @@ found at http://polymer.github.io/PATENTS.txt
         ) {
           var s = Y.get(u);
           Y.delete(u);
-          var f = s.value instanceof b ? s.value.template : void 0;
+          var f = s.value instanceof _ ? s.value.template : void 0;
           ct(r, u, f), a(e, e.firstChild), e.appendChild(u), Y.set(e, s);
         }
         !i && o && window.ShadyCSS.styleElement(e.host);
       });
     var Rt = Ot`
-  .light-entity-card {
-    padding: 16px;
-  }
-
-  .light-entity-child-card {
-    box-shadow: none !important;
-    padding: 0 !important;
-  }
-
-  .light-entity-card.group {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-
-  .ha-slider-full-width ha-slider {
-    width: 100%;
-  }
-
-  .percent-slider {
-    color: var(--primary-text-color);
-    margin-top: 5px;
-  }
-
-  .light-entity-card__header {
-    display: flex;
-    justify-content: space-between;
-    @apply --paper-font-headline;
-    line-height: 40px;
-    color: var(--primary-text-color);
-    font-size: 24px;
-  }
-
-  .group .light-entity-card__header {
-    font-size: 16px;
-  }
-
-  .light-entity-card-sliders > div {
-    margin-top: 10px;
-  }
-
-  .group .light-entity-card-sliders > div {
-    margin-top: 0px;
-  }
-
-  .light-entity-card__toggle {
-    display: flex;
-    cursor: pointer;
-  }
-
-  .light-entity-card__color-picker {
-    display: flex;
-    justify-content: space-around;
-    --ha-color-picker-wheel-borderwidth: 5;
-    --ha-color-picker-wheel-bordercolor: white;
-    --ha-color-picker-wheel-shadow: none;
-    --ha-color-picker-marker-borderwidth: 2;
-    --ha-color-picker-marker-bordercolor: white;
-  }
-
-  .group .light-entity-card__color-picker {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  ha-labeled-slider {
-    --paper-slider-input: {
-      width: 100%;
+    .light-entity-card {
+        padding: 16px;
     }
-  }
+    
+    .light-entity-child-card {
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
 
-  .light-entity-card-color_temp {
-    background-image: var(--ha-slider-background);
-  }
+    .light-entity-card.group {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
 
-  .group .light-entity-card-effectlist {
-    margin-top: -25px;
-  }
+    .ha-slider-full-width ha-slider {
+        width: 100%;
+    }
 
-  .light-entity-card-center {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-  }
+    .percent-slider {
+        color: var(--primary-text-color);
+        margin-top: 5px;
+    }
 
-  .light-entity-card-toggle {
-    margin-right: 5px;
-  }
+    .light-entity-card__header {
+        display: flex;
+        justify-content: space-between;
+        @apply --paper-font-headline;
+        line-height: 40px;
+        color: var(--primary-text-color);
+        font-size: 24px;
+    }
 
-  .hidden {
-    display: none;
-  }
+    .group .light-entity-card__header {
+        font-size: 16px;
+    }
+
+    .light-entity-card-sliders > div {
+        margin-top: 10px;
+    }
+
+    .group .light-entity-card-sliders > div {
+        margin-top: 0px;
+    }
+
+    .light-entity-card__toggle {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .light-entity-card__color-picker {
+        display: flex;
+        justify-content: space-around;
+        --ha-color-picker-wheel-borderwidth: 5;
+        --ha-color-picker-wheel-bordercolor: white;
+        --ha-color-picker-wheel-shadow: none;
+        --ha-color-picker-marker-borderwidth: 2;
+        --ha-color-picker-marker-bordercolor: white;
+    }
+
+    .group .light-entity-card__color-picker {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    ha-labeled-slider { --paper-slider-input: {width: 100%} }
+
+    .light-entity-card-color_temp {
+        background-image: var(--ha-slider-background);
+    }
+
+    .group .light-entity-card-effectlist {
+        margin-top: -25px;
+    }
+
+    .light-entity-card-center {
+        display: flex;
+        justify-content:center;
+        cursor: pointer;
+    }
+
+    .light-entity-card-toggle {
+        margin-right: 5px;
+    }
+
+    .hidden {
+        display: none;
+    }
 `,
       $t = {
         shorten_cards: !1,
         consolidate_entities: !1,
-        child_card: !1,
-        hide_header: !1,
-        header: "",
         color_wheel: !0,
         persist_features: !1,
         brightness: !0,
@@ -8936,6 +8920,8 @@ found at http://polymer.github.io/PATENTS.txt
         white_value: !0,
         color_picker: !0,
         smooth_color_wheel: !1,
+        hide_header: !1,
+        child_card: !1,
         show_slider_percent: !1,
         full_width_sliders: !1,
         brightness_icon: "weather-sunny",
@@ -8943,36 +8929,36 @@ found at http://polymer.github.io/PATENTS.txt
         temperature_icon: "thermometer",
       };
     var Lt = Ot`
-  .entities {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-  }
+    .entities {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+    }
 
-  .entities ha-formfield {
-    display: block;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
+    .entities paper-checkbox {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
 
-  .checkbox-options {
-    display: flex;
-  }
+    .checkbox-options {
+        display: flex;
+    }
 
-  .checkbox-options ha-formfield,
-  .entities paper-dropdown-menu,
-  .entities paper-input {
-    padding-right: 2%;
-    width: 48%;
-  }
+    .checkbox-options paper-checkbox,
+    .entities paper-dropdown-menu, 
+    .entities paper-input {
+        padding-right: 2%;
+        width: 48%;
+    }
 
-  .checkbox-options ha-formfield {
-    margin-top: 10px;
-  }
+    .checkbox-options paper-checkbox {
+        margin-top: 10px;
+    }
 
-  .overall-config {
-    margin-bottom: 20px;
-  }
+    .overall-config {
+        margin-bottom: 20px;
+    }
 `;
     const Vt = (t, e, n = {}, r = {}) => {
       const i = new Event(e, {
@@ -8997,10 +8983,9 @@ found at http://polymer.github.io/PATENTS.txt
           this._config = { ...$t, ...t };
         }
         get entityOptions() {
-          const t = Object.keys(this.hass.states).filter((t) =>
+          return Object.keys(this.hass.states).filter((t) =>
             ["switch", "light", "group"].includes(t.substr(0, t.indexOf(".")))
           );
-          return t.sort(), t;
         }
         firstUpdated() {
           this._firstRendered = !0;
@@ -9065,122 +9050,94 @@ found at http://polymer.github.io/PATENTS.txt
 
         <div class='overall-config'>
           <div class='checkbox-options'>
-            <ha-formfield label="Show Color Wheel">
-              <ha-checkbox
-                @change="${this.checkboxConfigChanged}" 
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
                 .checked=${this._config.color_wheel}
-                .value="${"color_wheel"}"
-              ></ha-checkbox>
-            </ha-formfield>
-            <ha-formfield label="Shorten Cards">
-              <ha-checkbox
-                @change="${this.checkboxConfigChanged}"
+                .configValue="${"color_wheel"}"
+              >Show Color Wheel</paper-checkbox>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
                 .checked=${this._config.shorten_cards}
-                .value="${"shorten_cards"}"
-              ></ha-checkbox>
-            </ha-formfield>
+                .configValue="${"shorten_cards"}"
+              >Shorten Cards</paper-checkbox>
             </div>
 
             <div class='checkbox-options'>
-              <ha-formfield label="Persist Features">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.persist_features}
-                  .value="${"persist_features"}"
-                ></ha-checkbox>
-              </ha-formfield>
-              <ha-formfield label="Show Brightness">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.brightness}
-                  .value="${"brightness"}"
-                ></ha-checkbox>
-              </ha-formfield>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.persist_features}
+                .configValue="${"persist_features"}"
+              >Persist Features</paper-checkbox>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.brightness}
+                .configValue="${"brightness"}"
+              >Show Brightness</paper-checkbox>
             </div>
 
             <div class='checkbox-options'>
-              <ha-formfield label="Show Color Temp">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.color_temp}
-                  .value="${"color_temp"}"
-                ></ha-checkbox>
-              </ha-formfield>
-              <ha-formfield label="Show White Value">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.white_value}
-                  .value="${"white_value"}"
-                ></ha-checkbox>
-              </ha-formfield>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.color_temp}
+                .configValue="${"color_temp"}"
+              >Show Color Temp</paper-checkbox>
+             <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.white_value}
+                .configValue="${"white_value"}"
+              >Show White Value</paper-checkbox>
             </div>
 
             <div class='checkbox-options'>
-              <ha-formfield label="Show Color Picker">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.color_picker}
-                  .value="${"color_picker"}"
-                ></ha-checkbox>
-              </ha-formfield>
-              <ha-formfield label="Show Effects List">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.effects_list}
-                  .value="${"effects_list"}"
-                ></ha-checkbox>
-              </ha-formfield>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.color_picker}
+                .configValue="${"color_picker"}"
+              >Show Color Picker</paper-checkbox>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.effects_list}
+                .configValue="${"effects_list"}"
+              >Show Effects List</paper-checkbox>
             </div>
 
             <div class='checkbox-options'>
-              <ha-formfield label="Full Width Sliders">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.full_width_sliders}
-                  .value="${"full_width_sliders"}"
-                ></ha-checkbox>
-              </ha-formfield>
-              <ha-formfield label="Show Slider Percent">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.show_slider_percent}
-                  .value="${"show_slider_percent"}"
-                ></ha-checkbox>
-              </ha-formfield>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.full_width_sliders}
+                .configValue="${"full_width_sliders"}"
+              >Full Width Sliders</paper-checkbox>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.show_slider_percent}
+                .configValue="${"show_slider_percent"}"
+              >Show Slider Percent</paper-checkbox>
             </div>
 
             <div class='checkbox-options'>
-              <ha-formfield label="Smooth Color Wheel">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.smooth_color_wheel}
-                  .value="${"smooth_color_wheel"}"
-                ></ha-checkbox>
-              </ha-formfield>
-              <ha-formfield label="Consolidate Entities">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.consolidate_entities}
-                  .value="${"consolidate_entities"}"
-                ></ha-checkbox>
-              </ha-formfield>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.smooth_color_wheel}
+                .configValue="${"smooth_color_wheel"}"
+              >Smooth Color Wheel</paper-checkbox>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.consolidate_entities}
+                .configValue="${"consolidate_entities"}"
+              >Consolidate Entities</paper-checkbox>
             </div>
 
             <div class='checkbox-options'>
-              <ha-formfield label="Hide Header">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.hide_header}
-                  .value="${"hide_header"}"
-                ></ha-checkbox>
-              </ha-formfield>
-              <ha-formfield label="Child Card">
-                <ha-checkbox
-                  @change="${this.checkboxConfigChanged}"
-                  .checked=${this._config.child_card}
-                  .value="${"child_card"}"
-                ></ha-checkbox>
-              </ha-formfield>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.hide_header}
+                .configValue="${"hide_header"}"
+              >Hide Header</paper-checkbox>
+              <paper-checkbox
+                @checked-changed="${this.configChanged}" 
+                .checked=${this._config.child_card}
+                .configValue="${"child_card"}"
+              >Child Card</paper-checkbox>
             </div>
           </div>
       </div>
@@ -9196,14 +9153,6 @@ found at http://polymer.github.io/PATENTS.txt
             void 0 !== r || null !== r
               ? { ...this._config, [e]: r }
               : { ...this._config, [e]: n }),
-            Vt(this, "config-changed", { config: this._config });
-        }
-        checkboxConfigChanged(t) {
-          if (!this._config || !this.hass || !this._firstRendered) return;
-          const {
-            target: { value: e, checked: n },
-          } = t;
-          (this._config = { ...this._config, [e]: n }),
             Vt(this, "config-changed", { config: this._config });
         }
       }
@@ -9341,17 +9290,21 @@ found at http://polymer.github.io/PATENTS.txt
       }
       createHeader(t) {
         if (this.config.hide_header) return K``;
-        const e =
-          this.config.header || t.attributes.friendly_name || t.entity_id;
-        return K`
+        let e = this.config.header;
+        return (
+          (e = this.config.consolidate_entities
+            ? this.config.header || t.attributes.friendly_name || t.entity_id
+            : t.attributes.friendly_name || t.entity_id || this.config.header),
+          K`
       <div class="light-entity-card__header">
         <div class="light-entity-card__title">${e}</div>
         <div class="light-entity-card-toggle">
           <ha-switch .checked=${this.isEntityOn(t)} @change=${(e) =>
-          this.setToggle(e, t)}></ha-switch>
+            this.setToggle(e, t)}></ha-switch>
         </div>
       </div>
-    `;
+    `
+        );
       }
       createBrightnessSlider(t) {
         return !1 === this.config.brightness
@@ -9466,56 +9419,10 @@ found at http://polymer.github.io/PATENTS.txt
     `;
       }
       dontShowFeature(t, e) {
-        let n = Dt.featureNames[t] & e.attributes.supported_features;
-        const r = e.attributes.supported_color_modes || [];
-        if (!n)
-          switch (t) {
-            case "brightness":
-              if (
-                !(n = Object.prototype.hasOwnProperty.call(
-                  e.attributes,
-                  "brightness"
-                ))
-              ) {
-                const t = [
-                  "hs",
-                  "rgb",
-                  "rgbw",
-                  "rgbww",
-                  "white",
-                  "brightness",
-                  "color_temp",
-                  "xy",
-                ];
-                n = [...new Set(r.filter((e) => t.includes(e)))].length > 0;
-              }
-              break;
-            case "colorTemp":
-              if (r) {
-                const t = ["color_temp"];
-                n = [...new Set(r.filter((e) => t.includes(e)))].length > 0;
-              }
-              break;
-            case "effectList":
-              n = e.attributes.effect_list && e.attributes.effect_list.length;
-              break;
-            case "color":
-              if (!n) {
-                const t = ["hs", "rgb", "rgbw", "rgbww", "xy"];
-                n = [...new Set(r.filter((e) => t.includes(e)))].length > 0;
-              }
-              break;
-            case "whiteValue":
-              n = Object.prototype.hasOwnProperty.call(
-                e.attributes,
-                "white_value"
-              );
-              break;
-            default:
-              n = !1;
-          }
         return (
-          !n || (!this.config.persist_features && !this.isEntityOn(e)) || void 0
+          !(Dt.featureNames[t] & e.attributes.supported_features) ||
+          (!this.config.persist_features && !this.isEntityOn(e)) ||
+          void 0
         );
       }
       generateColorPickerId(t) {
