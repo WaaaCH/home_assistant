@@ -1,0 +1,40 @@
+homeassistant:
+  name: Наш дом
+  latitude: 55.889953
+  longitude: 37.678110
+  elevation: 143
+  unit_system: metric
+  time_zone: Europe/Moscow
+  
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+#Вынос во внешние файлы
+group: !include includes/groups.yaml
+automation: !include includes/automations.yaml
+script: !include includes/scripts.yaml
+scene: !include includes/scenes.yaml
+yeelight: !include includes/yeelight.yaml
+
+#Вынос во внешние папки
+sensor: !include_dir_merge_list includes/sensor
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.30.33.3 # Add the IP address of the proxy server
+    
+# Example configuration.yaml entry
+mobile_app:
+
+remote:
+  - platform: xiaomi_miio
+    host: 192.168.1.24
+    token: d35a590a1bd59a6dc4e6e8d71b1a03fc
+    slot: 1
+    timeout: 30
+    hidden: false

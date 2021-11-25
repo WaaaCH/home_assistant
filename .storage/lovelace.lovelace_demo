@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "key": "lovelace.lovelace_demo",
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "title": "Home"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.sergei",
+                "state": "unknown",
+                "attributes": {
+                    "editable": false,
+                    "id": "sergei",
+                    "user_id": "715515aea4b6431599873c8113687273",
+                    "friendly_name": "\u0421\u0435\u0440\u0433\u0435\u0439"
+                },
+                "last_changed": "2021-11-25T16:33:34.664815+00:00",
+                "last_updated": "2021-11-25T16:33:44.734533+00:00",
+                "context": {
+                    "id": "d06249d30026eb285c549bb63c134889",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-11-25T16:33:44.739903+00:00"
+        }
+    ]
+}

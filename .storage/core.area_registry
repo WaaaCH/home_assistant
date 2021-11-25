@@ -1,0 +1,48 @@
+{
+    "version": 1,
+    "key": "core.area_registry",
+    "data": {
+        "areas": [
+            {
+                "name": "\u041a\u0443\u0445\u043d\u044f",
+                "id": "kukhnia",
+                "picture": null
+            },
+            {
+                "name": "\u041c\u0430\u043b\u0435\u043d\u044c\u043a\u0430\u044f \u043a\u043e\u043c\u043d\u0430\u0442\u0430",
+                "id": "malenkaia_komnata",
+                "picture": null
+            },
+            {
+                "name": "\u0421\u0440\u0435\u0434\u043d\u044f\u044f \u043a\u043e\u043c\u043d\u0430\u0442\u0430",
+                "id": "sredniaia_komnata",
+                "picture": null
+            },
+            {
+                "name": "\u0411\u043e\u043b\u044c\u0448\u0430\u044f \u043a\u043e\u043c\u043d\u0430\u0442\u0430",
+                "id": "bolshaia_komnata",
+                "picture": null
+            },
+            {
+                "name": "\u0411\u0430\u043b\u043a\u043e\u043d",
+                "id": "balkon",
+                "picture": null
+            },
+            {
+                "name": "\u0412\u0430\u043d\u043d\u0430\u044f",
+                "id": "vannaia",
+                "picture": null
+            },
+            {
+                "name": "\u0422\u0443\u0430\u043b\u0435\u0442",
+                "id": "tualet",
+                "picture": null
+            },
+            {
+                "name": "\u041a\u043e\u0440\u0438\u0434\u043e\u0440",
+                "id": "koridor",
+                "picture": null
+            }
+        ]
+    }
+}

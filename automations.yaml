@@ -1,0 +1,46 @@
+- id: '1637417480835'
+  alias: Автоматическое включение света в коридоре
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 386937fc42f84a32b4a018f1b3dec0ae
+    entity_id: binary_sensor.0x158d00039db9e6_motion
+    domain: binary_sensor
+  condition:
+  - condition: time
+    after: 07:00
+    before: 00:00
+  action:
+  - type: turn_on
+    device_id: cac996ab7e27ecd320204b8d10930cc3
+    entity_id: switch.0x158d000433045c_channel_1
+    domain: switch
+  - type: turn_on
+    device_id: cac996ab7e27ecd320204b8d10930cc3
+    entity_id: switch.0x158d000433045c_channel_2
+    domain: switch
+  mode: single
+- id: '1637417957280'
+  alias: Автоматическое включение света в коридоре
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 386937fc42f84a32b4a018f1b3dec0ae
+    entity_id: binary_sensor.0x158d00039db9e6_motion
+    domain: binary_sensor
+  condition:
+  - condition: time
+    after: 07:00
+    before: 00:00
+  action:
+  - type: turn_on
+    device_id: cac996ab7e27ecd320204b8d10930cc3
+    entity_id: switch.0x158d000433045c_channel_1
+    domain: switch
+  - type: turn_on
+    device_id: cac996ab7e27ecd320204b8d10930cc3
+    entity_id: switch.0x158d000433045c_channel_2
+    domain: switch
+  mode: single

@@ -1,0 +1,66 @@
+{
+    "version": "6",
+    "key": "hacs/257275420.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@tomaae"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": true,
+        "default_branch": "master",
+        "description": "OpenMediaVault integration for Home Assistant",
+        "domain": "openmediavault",
+        "domains": [
+            "sensor",
+            "switch"
+        ],
+        "downloads": 2799,
+        "etag_repository": "W/\"3b5cd40491efa0028f0147d0fa9894b8d2b68619668b1ee6eddf70c977083ecf\"",
+        "file_name": "",
+        "filename": "openmediavault.zip",
+        "first_install": false,
+        "fork": false,
+        "full_name": "tomaae/homeassistant-openmediavault",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": "0.110.0",
+        "id": "257275420",
+        "iot_class": "local_poll",
+        "installed": true,
+        "installed_commit": "3a0cd5a",
+        "installed_version": "1.1.7",
+        "open_issues": 11,
+        "last_commit": "3a0cd5a",
+        "last_version": "1.1.7",
+        "last_updated": "2021-10-08T13:05:52Z",
+        "manifest_name": "OpenMediaVault",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2021-10-08T13:05:52",
+        "releases": true,
+        "render_readme": false,
+        "published_tags": [
+            "1.1.7",
+            "v1.1.6",
+            "v1.1.5",
+            "v1.1.4",
+            "v1.1.3"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 31,
+        "topics": [
+            "hacs",
+            "homeassistant",
+            "homeassistant-components",
+            "homeassistant-integration",
+            "omv",
+            "openmediavault"
+        ],
+        "zip_release": true
+    }
+}

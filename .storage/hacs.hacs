@@ -1,0 +1,13 @@
+{
+    "version": "6",
+    "key": "hacs.hacs",
+    "data": {
+        "view": "Grid",
+        "compact": false,
+        "onboarding_done": false,
+        "archived_repositories": [],
+        "renamed_repositories": {
+            "PepegaBruh/CryptoTracker": "BigNocciolino/CryptoTracker"
+        }
+    }
+}

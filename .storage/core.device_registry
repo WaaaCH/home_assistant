@@ -1,0 +1,907 @@
+{
+    "version": 1,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "d55ce73840cd492658aa7526d0d5b7a5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "OS"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant Operating System",
+                "name": "Home Assistant Operating System",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "1089df736641ce88271940c14cf8ce42",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "1ef8ac1ce6264bdcb40940f2091a214d"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "met"
+                    ]
+                ],
+                "manufacturer": "Met.no",
+                "model": "Forecast",
+                "name": "Forecast",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "97f2e4e2ef313ee9cbba4bd19f62dfaf",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "d55ce73840cd492658aa7526d0d5b7a5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_configurator"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "File editor",
+                "sw_version": "5.3.3",
+                "entry_type": "service",
+                "id": "1af939a0400f402e64ff65f71d8b2040",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/core_configurator"
+            },
+            {
+                "config_entries": [
+                    "d55ce73840cd492658aa7526d0d5b7a5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_mosquitto"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Mosquitto broker",
+                "sw_version": "6.0.1",
+                "entry_type": "service",
+                "id": "eae308c5231c36d46758f38e0d0a7048",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/core_mosquitto"
+            },
+            {
+                "config_entries": [
+                    "d55ce73840cd492658aa7526d0d5b7a5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_ssh"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Terminal & SSH",
+                "sw_version": "9.2.1",
+                "entry_type": "service",
+                "id": "03c69c523ccbdc7fc8c82d3e1b16c499",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/core_ssh"
+            },
+            {
+                "config_entries": [
+                    "8f10d91b4f480c71348c09af2f4b4494"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hacs",
+                        "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+                    ]
+                ],
+                "manufacturer": "hacs.xyz",
+                "model": "",
+                "name": "HACS",
+                "sw_version": "1.17.2",
+                "entry_type": "service",
+                "id": "1607a4fab39da43562aa7d8c3cede87c",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "d55ce73840cd492658aa7526d0d5b7a5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_duckdns"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Duck DNS",
+                "sw_version": "1.14.0",
+                "entry_type": "service",
+                "id": "15ad2096df8f03d871dbfc76766feeda",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/core_duckdns"
+            },
+            {
+                "config_entries": [
+                    "d55ce73840cd492658aa7526d0d5b7a5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_nginx_proxy"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "NGINX Home Assistant SSL proxy",
+                "sw_version": "3.0.2",
+                "entry_type": "service",
+                "id": "2f9ae5a198391cc55a36713233a2c4a8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/core_nginx_proxy"
+            },
+            {
+                "config_entries": [
+                    "d55ce73840cd492658aa7526d0d5b7a5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "45df7312_zigbee2mqtt_edge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant Add-on: Zigbee2mqtt",
+                "model": "Home Assistant Add-on",
+                "name": "Zigbee2mqtt Edge",
+                "sw_version": "edge",
+                "entry_type": "service",
+                "id": "fc65d0e83c304f01b4d019bfa3212f2f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/45df7312_zigbee2mqtt_edge"
+            },
+            {
+                "config_entries": [
+                    "67c08bdfe3572902757490e67908caef"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "05551a62712462ea79fa0315e154a3f7"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "QM164E",
+                "name": "32PFS6401/60",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "426ef751926bd2f0e2bc768bca5c0416",
+                "via_device_id": null,
+                "area_id": "sredniaia_komnata",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "67c08bdfe3572902757490e67908caef"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "a2a1703496c6f65744de14eae7b4cc10"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "MiTV-AESP0",
+                "name": "\u0422\u0412-\u043f\u0440\u0438\u0441\u0442\u0430\u0432\u043a\u0430 Mi TV Stick",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "390bfb8473dd1fe7fea7392b152a072b",
+                "via_device_id": null,
+                "area_id": "malenkaia_komnata",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "88f32bf5fe0e11899ae5048980a504b5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "ipp",
+                        "cfe92100-67c4-11d4-a45f-e0bb9ee286c1"
+                    ]
+                ],
+                "manufacturer": "EPSON",
+                "model": "L3160 Series",
+                "name": "EPSON L3160 Series",
+                "sw_version": "02.17.VJ15K4",
+                "entry_type": null,
+                "id": "0c6bb55f73e5ce908e7a320be1b70c01",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "54:ef:44:2a:b7:b1"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "0xbc33acfffeca35af"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "lumi.gateway.mgl03 ZNDMWG03LM",
+                "name": "\u0428\u043b\u044e\u0437",
+                "sw_version": "1.5.0_0102",
+                "entry_type": null,
+                "id": "6da34a22b12a75190bcc9183567538b2",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "0x158d0003975cb3"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "0x158d0003975cb3"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "lumi.sensor_magnet MCCGQ01LM",
+                "name": "\u0414\u0430\u0442\u0447\u0438\u043a \u043e\u043a\u043d\u043e \u0441\u0440. \u043a\u043e\u043c",
+                "sw_version": 10,
+                "entry_type": null,
+                "id": "eb17abba91c93e2f667bbf2bb16e49fd",
+                "via_device_id": "6da34a22b12a75190bcc9183567538b2",
+                "area_id": "sredniaia_komnata",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "0x158d0003975c4e"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "0x158d0003975c4e"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "lumi.sensor_magnet MCCGQ01LM",
+                "name": "\u0414\u0430\u0442\u0447\u0438\u043a \u0434\u0432\u0435\u0440\u044c \u0431\u0430\u043b\u043a\u043e\u043d",
+                "sw_version": 10,
+                "entry_type": null,
+                "id": "66eabeece3eba34354635ec3a0b2a8f5",
+                "via_device_id": "6da34a22b12a75190bcc9183567538b2",
+                "area_id": "balkon",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "0x158d00064418a9"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "0x158d00064418a9"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "lumi.sensor_switch WXKG01LM",
+                "name": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f \u043a\u043d\u043e\u043f\u043a\u0430",
+                "sw_version": 10,
+                "entry_type": null,
+                "id": "74c4a28b563757ccde5fa333fd646d8a",
+                "via_device_id": "6da34a22b12a75190bcc9183567538b2",
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "0x158d00039db9e6"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "0x158d00039db9e6"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "lumi.sensor_motion RTCGQ01LM",
+                "name": "\u0414\u0430\u0442\u0447\u0438\u043a \u0434\u0432\u0438\u0436\u0435\u043d\u0438\u044f Mi",
+                "sw_version": 11,
+                "entry_type": null,
+                "id": "386937fc42f84a32b4a018f1b3dec0ae",
+                "via_device_id": "6da34a22b12a75190bcc9183567538b2",
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "0x158d000433045c"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "0x158d000433045c"
+                    ]
+                ],
+                "manufacturer": "Aqara",
+                "model": "lumi.ctrl_neutral2 QBKG03LM",
+                "name": "\u0412\u044b\u043a\u043b\u044e\u0447\u0430\u0442\u0435\u043b\u044c \u043a\u043e\u0440\u0438\u0434\u043e\u0440",
+                "sw_version": 22,
+                "entry_type": null,
+                "id": "cac996ab7e27ecd320204b8d10930cc3",
+                "via_device_id": "6da34a22b12a75190bcc9183567538b2",
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "0x158d0006bcd36c"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "0x158d0006bcd36c"
+                    ]
+                ],
+                "manufacturer": "Aqara",
+                "model": "lumi.weather WSDCGQ11LM",
+                "name": "\u0414\u0430\u0442\u0447\u0438\u043a \u0442\u0435\u043c\u043f\u0435\u0440\u0430\u0442\u0443\u0440\u044b \u0441\u0440. \u043a\u043e\u043c",
+                "sw_version": 0,
+                "entry_type": null,
+                "id": "fcf9ddfa229080b3052c85cce63561b6",
+                "via_device_id": "6da34a22b12a75190bcc9183567538b2",
+                "area_id": "sredniaia_komnata",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "0x158d000450f90e"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "0x158d000450f90e"
+                    ]
+                ],
+                "manufacturer": "Aqara",
+                "model": "lumi.ctrl_neutral2 QBKG03LM",
+                "name": "\u0412\u044b\u043a\u043b\u044e\u0447\u0430\u0442\u0435\u043b\u044c \u0441\u0440. \u043a\u043e\u043c",
+                "sw_version": 22,
+                "entry_type": null,
+                "id": "aed59b649edf3fed91fe7ff991233b38",
+                "via_device_id": "6da34a22b12a75190bcc9183567538b2",
+                "area_id": "sredniaia_komnata",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "0x54ef44100016ff06"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "0x54ef44100016ff06"
+                    ]
+                ],
+                "manufacturer": "Aqara",
+                "model": "lumi.switch.b1lc04 QBKG38LM",
+                "name": "Aqara Single Wall Switch E1",
+                "sw_version": 20,
+                "entry_type": null,
+                "id": "7e92cc04f64d8007aec203c3b459726b",
+                "via_device_id": "6da34a22b12a75190bcc9183567538b2",
+                "area_id": "malenkaia_komnata",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "0x54ef441000182331"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "0x54ef441000182331"
+                    ]
+                ],
+                "manufacturer": "Aqara",
+                "model": "lumi.switch.b2lc04 QBKG39LM",
+                "name": "Aqara Double Wall Switch E1",
+                "sw_version": 20,
+                "entry_type": null,
+                "id": "029c432c3754ae9b01d8b4a2b1369e82",
+                "via_device_id": "6da34a22b12a75190bcc9183567538b2",
+                "area_id": "bolshaia_komnata",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "c16c692664d935ae2192a0ba84c8a0a6"
+                ],
+                "connections": [
+                    [
+                        "bluetooth",
+                        "a4c138d90a5c"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_gateway3",
+                        "a4c138d90a5c"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "LYWSD03MMC",
+                "name": "Mi Temperature and Humidity Monitor 2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "3cb7a7d3c9adb8834292c1029ebf5332",
+                "via_device_id": "6da34a22b12a75190bcc9183567538b2",
+                "area_id": "balkon",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "b8c4e5336468a4b09c7a32c8c5fcba21"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "miio_yeelink",
+                        "f0:b4:29:b7:40:98"
+                    ]
+                ],
+                "manufacturer": "yeelink",
+                "model": "yeelink.light.color1",
+                "name": "\u0411\u0440\u04301",
+                "sw_version": "1.4.2_0076",
+                "entry_type": null,
+                "id": "06704794bda4ba1f0657a200e31dcf4b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "3f02f0061d126ae20faa5d43a4170157"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "miio_yeelink",
+                        "f0:b4:29:b8:46:a2"
+                    ]
+                ],
+                "manufacturer": "yeelink",
+                "model": "yeelink.light.color1",
+                "name": "\u0411\u0440\u04302",
+                "sw_version": "1.4.2_0076",
+                "entry_type": null,
+                "id": "6f90496fa4bbaeb254fe567070f11729",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "5e3f160205b487ca7910bd305968cd2e"
+                ],
+                "connections": [
+                    [
+                        "openmediavault",
+                        "192.168.1.11"
+                    ]
+                ],
+                "identifiers": [],
+                "manufacturer": "OpenMediaVault",
+                "model": null,
+                "name": "Oblako.168.1.11",
+                "sw_version": "5.6.19-1 (Usul)",
+                "entry_type": null,
+                "id": "41be2228845841c4ec181de00e377309",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "5e3f160205b487ca7910bd305968cd2e"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "openmediavault",
+                        "OMV",
+                        "sensor",
+                        "System"
+                    ]
+                ],
+                "manufacturer": "OpenMediaVault",
+                "model": null,
+                "name": "OMV System",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "73776caa1fdac92297d52e44937b9a0b",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "5e3f160205b487ca7910bd305968cd2e"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "openmediavault",
+                        "OMV",
+                        "sensor",
+                        "Filesystem"
+                    ]
+                ],
+                "manufacturer": "OpenMediaVault",
+                "model": null,
+                "name": "OMV Filesystem",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "91cd3625f940071ab9dfbee613d4bbbc",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "5e3f160205b487ca7910bd305968cd2e"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "openmediavault",
+                        "OMV",
+                        "sensor",
+                        "Disk"
+                    ]
+                ],
+                "manufacturer": "OpenMediaVault",
+                "model": null,
+                "name": "OMV Disk",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f1ba9b8538db3fca04a40365c55add4f",
+                "via_device_id": null,
+                "area_id": "koridor",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "6f237a004b8e892866924894bf5042a7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "yandex_station",
+                        "FF98F0296C9F56A5F548B266"
+                    ]
+                ],
+                "manufacturer": "\u042f\u043d\u0434\u0435\u043a\u0441",
+                "model": "\u0421\u0442\u0430\u043d\u0446\u0438\u044f \u041c\u0438\u043d\u0438",
+                "name": "\u042f\u043d\u0434\u0435\u043a\u0441 \u041c\u0438\u043d\u0438",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "043ef1b3d281c8f7edfdff2f3c664fd1",
+                "via_device_id": null,
+                "area_id": "sredniaia_komnata",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "6f237a004b8e892866924894bf5042a7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "yandex_station",
+                        "LB000000000000033857000042a95d57"
+                    ]
+                ],
+                "manufacturer": "\u042f\u043d\u0434\u0435\u043a\u0441",
+                "model": "\u0421\u0442\u0430\u043d\u0446\u0438\u044f \u041b\u0430\u0439\u0442",
+                "name": "\u042f\u043d\u0434\u0435\u043a\u0441 \u041b\u0430\u0439\u0442 5d57",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "52066097d899ba1bbbc4dd83c746f6be",
+                "via_device_id": null,
+                "area_id": "malenkaia_komnata",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "36243a30101696e762c0839542480d06"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "miio_yeelink",
+                        "28:6c:07:11:d9:7f"
+                    ]
+                ],
+                "manufacturer": "yeelink",
+                "model": "yeelink.light.strip1",
+                "name": "\u0421\u0432\u0435\u0442\u043e\u0434\u0438\u043e\u0434\u043d\u0430\u044f \u043b\u0435\u043d\u0442\u0430",
+                "sw_version": "1.4.2_0050",
+                "entry_type": null,
+                "id": "29f1e6142662df308751ea5ed8b1bbe8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "f9b07d2b4e94369cbd4de0939426a390"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "28:6c:07:2d:c7:2e"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_miio",
+                        "28:6c:07:2d:c7:2e"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "chuangmi.plug.m1",
+                "name": "\u0441\u0432\u0435\u0442 \u043d\u0430 \u0431\u0430\u043b\u043a\u043e\u043d\u0435",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "4742cc2292a6d186899feebdfa099205",
+                "via_device_id": null,
+                "area_id": "balkon",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "6678df59f89317f0535526dedf15f0ab"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "64:90:c1:15:72:f2"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_miio",
+                        "64:90:c1:15:72:f2"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "roborock.vacuum.m1s",
+                "name": "\u0447\u0430\u043f\u0430",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "7dc94ad1120767d8f6b57374887d367a",
+                "via_device_id": null,
+                "area_id": "sredniaia_komnata",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "d55ce73840cd492658aa7526d0d5b7a5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_samba"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "Samba share",
+                "sw_version": "9.5.1",
+                "entry_type": "service",
+                "id": "2bb8705efad489a7dd272445405473f1",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/core_samba"
+            },
+            {
+                "config_entries": [
+                    "d55ce73840cd492658aa7526d0d5b7a5"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hassio",
+                        "core_mariadb"
+                    ]
+                ],
+                "manufacturer": "Official add-ons",
+                "model": "Home Assistant Add-on",
+                "name": "MariaDB",
+                "sw_version": "2.4.0",
+                "entry_type": "service",
+                "id": "5c7f69dcca2e05eddde62da02015e1b9",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hassio/addon/core_mariadb"
+            }
+        ],
+        "deleted_devices": []
+    }
+}

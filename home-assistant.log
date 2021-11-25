@@ -1,0 +1,27 @@
+2021-11-25 19:33:33 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration yandex_station which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-11-25 19:33:33 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration openmediavault which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-11-25 19:33:33 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration fullykiosk which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-11-25 19:33:33 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration yandex_smart_home which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-11-25 19:33:33 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-11-25 19:33:33 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_gateway3 which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-11-25 19:33:33 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration miio_yeelink which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-11-25 19:33:56 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:34:05 ERROR (MainThread) [homeassistant.components.yeelight.config_flow] Failed to get properties from 192.168.1.15: Failed to read from the socket at 192.168.1.15:55443: [Errno 111] Connect call failed ('192.168.1.15', 55443).
+2021-11-25 19:34:05 ERROR (MainThread) [homeassistant.components.yeelight.config_flow] Failed to get properties from 192.168.1.16: Failed to read from the socket at 192.168.1.16:55443: [Errno 111] Connect call failed ('192.168.1.16', 55443).
+2021-11-25 19:34:05 ERROR (MainThread) [homeassistant.components.yeelight.config_flow] Failed to get properties from 192.168.1.17: Failed to read from the socket at 192.168.1.17:55443: [Errno 111] Connect call failed ('192.168.1.17', 55443).
+2021-11-25 19:34:43 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:35:30 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:36:17 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:37:04 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:37:51 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:38:38 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:38:55 ERROR (MainThread) [homeassistant.components.yeelight.config_flow] Failed to get properties from 192.168.1.16: Failed to read from the socket at 192.168.1.16:55443: [Errno 111] Connect call failed ('192.168.1.16', 55443).
+2021-11-25 19:38:55 ERROR (MainThread) [homeassistant.components.yeelight.config_flow] Failed to get properties from 192.168.1.15: Failed to read from the socket at 192.168.1.15:55443: [Errno 111] Connect call failed ('192.168.1.15', 55443).
+2021-11-25 19:38:55 ERROR (MainThread) [homeassistant.components.yeelight.config_flow] Failed to get properties from 192.168.1.17: Failed to read from the socket at 192.168.1.17:55443: [Errno 111] Connect call failed ('192.168.1.17', 55443).
+2021-11-25 19:39:25 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:40:12 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:40:59 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:41:46 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:42:33 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:43:20 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline
+2021-11-25 19:44:07 WARNING (MainThread) [custom_components.xiaomi_gateway3.core.mini_miio] 192.168.1.28 | Device offline

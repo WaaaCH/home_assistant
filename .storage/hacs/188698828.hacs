@@ -1,0 +1,65 @@
+{
+    "version": "6",
+    "key": "hacs/188698828.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@dmitry-k",
+            "@dext0r"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [
+            "RU",
+            "BY"
+        ],
+        "config_flow": true,
+        "default_branch": "master",
+        "description": "Adds support for Yandex Smart Home (Alice voice assistant) into Home Assistant",
+        "domain": "yandex_smart_home",
+        "domains": [],
+        "downloads": 0,
+        "etag_repository": "W/\"f4cae1d94b8463510b9b56bfa3238341ede16f0b090a69d99ada69a692bb9f94\"",
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "dmitry-k/yandex_smart_home",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": "2021.7",
+        "id": "188698828",
+        "iot_class": null,
+        "installed": true,
+        "installed_commit": "04b4ea2",
+        "installed_version": "v0.3.2",
+        "open_issues": 3,
+        "last_commit": "876a85b",
+        "last_version": "v0.3.2",
+        "last_updated": "2021-11-25T14:15:32Z",
+        "manifest_name": "Yandex Smart Home",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2021-11-25T14:15:32",
+        "releases": true,
+        "render_readme": true,
+        "published_tags": [
+            "v0.3.2",
+            "v0.3.1",
+            "v0.3.0",
+            "v0.2.2",
+            "v0.2.1"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 437,
+        "topics": [
+            "alice",
+            "home-assistant-component",
+            "voice-assistant",
+            "yandex"
+        ],
+        "zip_release": false
+    }
+}

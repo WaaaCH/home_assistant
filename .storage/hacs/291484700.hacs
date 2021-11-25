@@ -1,0 +1,62 @@
+{
+    "version": "6",
+    "key": "hacs/291484700.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@AlexxIT"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": true,
+        "default_branch": "master",
+        "description": "Control Zigbee, BLE and Mesh devices from Home Assistant with Xiaomi Gateway 3 (ZNDMWG03LM) on original firmware",
+        "domain": "xiaomi_gateway3",
+        "domains": [],
+        "downloads": 0,
+        "etag_repository": "W/\"d012b2ab1b7c5bd9c7112399d96902bb6f5106b682869545927b739da906e321\"",
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "AlexxIT/XiaomiGateway3",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": null,
+        "id": "291484700",
+        "iot_class": null,
+        "installed": true,
+        "installed_commit": "ac33276",
+        "installed_version": "v1.6.2",
+        "open_issues": 89,
+        "last_commit": "ac33276",
+        "last_version": "v1.6.2",
+        "last_updated": "2021-11-25T15:16:43Z",
+        "manifest_name": "Xiaomi Gateway 3",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2021-11-25T15:16:43",
+        "releases": true,
+        "render_readme": true,
+        "published_tags": [
+            "v1.6.2",
+            "v1.6.1",
+            "v1.6.0",
+            "v1.5.1",
+            "v1.5.0"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 1105,
+        "topics": [
+            "ble",
+            "hacs",
+            "home-assistant",
+            "xiaomi",
+            "zigbee"
+        ],
+        "zip_release": false
+    }
+}
